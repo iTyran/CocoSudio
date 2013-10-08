@@ -2,109 +2,109 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-<title>������[UIPanel]</title>
-<meta name="Keywords" content="CocoStudio,Cocos2d-x,cocos2d-iphone,2D��Ϸ����,��Ϸ��������" />
-<meta name="Description" content="CocoStudio�����ֲ�,CocoStudio�����ֲ�,��Ϸ�༭��ʹ�ð���,CocoStudio�û�ָ��"/>
+<title>层容器[UIPanel]</title>
+<meta name="Keywords" content="CocoStudio,Cocos2d-x,cocos2d-iphone,2D游戏引擎,游戏开发工具" />
+<meta name="Description" content="CocoStudio帮助手册,CocoStudio中文手册,游戏编辑器使用帮助,CocoStudio用户指南"/>
 <link type="text/css" rel="stylesheet" href="style/style.css"  />
 </head>
 <body id="split">
 <div id="content">
   <div rel="aboutXMLDoc"><h1 style="font-size: 36px; text-align:center; color:#999; margin:20px 0px 15px 0px; " >English version is coming soon...</h1>
-    <h2>������[UIPanel]</h2>
+    <h2>层容器[UIPanel]</h2>
     
-    <h3>ͼ��</h3>
+    <h3>图标</h3>
     <div class="desc">
     <div class="descimg"><img src="img/3-3-9-img-01.png" alt="" /></div>
     </div>
-    <h3>����</h3>
+    <h3>描述</h3>
     <div class="desc">
-		<p>UIPanel������һ��UIWidget���࣬��ʵ�����ڴ������ϵĲ�������<br />
+		<p>UIPanel的类是一个UIWidget子类，它实现了在触摸屏上的层容器。<br />
 		</p>
 		<div class="longdesc">
-		  <p>����һ��������ʱ�����¼��Ͷ�����Ϣ���͵�Ŀ�����ʱ���趨��Ŀ����ж��������̳���UIWidget���ÿؼ��ṩ�˷��������ò������Ĳ��У����ߣ�����ɫ͸���ȣ������ɫ��ͼƬ��Դ�����ԡ�</p>
+		  <p>触摸一个层容器时拦截事件和动作消息发送到目标对象时。设定的目标和行动方法都继承自UIWidget。该控件提供了方法来设置层容器的裁切，宽高，背景色透明度，填充颜色，图片资源等属性。</p>
 		  <p>&nbsp;</p>
 			
 		</div>
     </div>
-	<h3>�Ź�������</h3>
+	<h3>九宫格属性</h3>
     <div class="desc">
     	<p>&nbsp;</p>
-    	<p>��鿴<a href="3-3-16UIEditor-General-Property.html#ninebox">UI�ؼ��Ź�������ҳ</a></p>
+    	<p>请查看<a href="3-3-16UIEditor-General-Property.html#ninebox">UI控件九宫格属性页</a></p>
     	<p>&nbsp;</p>
     </div>
-    <h3>��������</h3>
+    <h3>常规属性</h3>
     <div class="desc">
     	<p>&nbsp;</p>
-    	<p>��鿴<a href="3-3-16UIEditor-General-Property.html#properties">UI�ؼ���������ҳ</a></p>
+    	<p>请查看<a href="3-3-16UIEditor-General-Property.html#properties">UI控件常规属性页</a></p>
     	<p>&nbsp;</p>
     </div>
     
-    <h3>����</h3>
+    <h3>特性</h3>
     <div class="desc">
     	<div descimg><img src="img/3-3-9-img-02.png" alt="" /></div>
     	
-        	<h4>�ü�</h4>
+        	<h4>裁剪</h4>
             <div class="desc">
               <p>&nbsp;</p>
-              <p>���ص��ؼ���ʾ��������ӿؼ�</p>
+              <p>隐藏掉控件显示区域外的子控件</p>
               <p>&nbsp;</p>
             </div>
             
          
-            <h4>�ļ�</h4>
+            <h4>文件</h4>
             <div class="desc">
               <p>&nbsp;</p>
-              <p>����һ��Ĭ���µ�ͼƬ��png,jpg�����ؼ�Ĭ��״̬����ʾ��</p>
+              <p>配置一张默认下的图片（png,jpg），控件默认状态下显示。</p>
               <p>&nbsp;</p>
             </div>
-          <h4>����ɫ͸����</h4>
+          <h4>背景色透明度</h4>
             <div class="desc">
               <p>&nbsp;</p>
-              <p> ���ñ�����ɫ��͸���ȣ���Χ0-255�� 0��ʾ��ȫ͸����255��ʾ��͸����</p>
+              <p> 设置背景颜色的透明度，范围0-255。 0表示完全透明，255表示不透明。</p>
               <p>&nbsp;</p>
           </div>
            
-           <h4>�����ɫ</h4>
+           <h4>填充颜色</h4>
             <div class="desc">
           
        	
-                	<h5>����ɫ</h5>
+                	<h5>无颜色</h5>
                     <div class="desc">
                       <p>&nbsp;</p>
-                      <p>����ɫ״̬�£��ؼ�����ɫ�����</p>
+                      <p>无颜色状态下，控件背景色变成无</p>
                       <p>&nbsp;</p>
                     </div>
-                    <h5>��ɫ</h5>
+                    <h5>单色</h5>
                      <div class="desc">
                       <p>&nbsp;</p>
-                      <p>���ñ���ɫ����ɫ��RGB��</p>
+                      <p>设置背景色的颜色（RGB）</p>
                       <p>&nbsp;</p>
                     </div>
-                    <h5>����ɫ</h5> 
+                    <h5>渐变色</h5> 
                     <div>
                     <ol>
-                    	<li>��ʼɫ</li>
+                    	<li>开始色</li>
                          <div class="desc">
                            <p>&nbsp;</p>
-                           <p>���ý���ɫ�������ɫ</p>
+                           <p>设置渐变色的起点颜色</p>
                            <p>&nbsp;</p>
                          </div>
-                        <li>����ɫ</li>
+                        <li>结束色</li>
                           <div class="desc">
                             <p>&nbsp;</p>
-                            <p>���ý���ɫ�Ľ�����ɫ</p>
+                            <p>设置渐变色的结束颜色</p>
                             <p>&nbsp;</p>
                           </div>
                         <li>X</li>
                           <div class="desc">
                             <p>&nbsp;</p>
-                            <p>����x</p>
+                            <p>向量x</p>
                             <p>&nbsp;</p>
                           </div>
                         <li>Y</li>
                           <div class="desc">
                             <p>&nbsp;</p>
-                            <p>����Y</p>
+                            <p>向量Y</p>
                             <p>&nbsp;</p>
                           </div>
                           
@@ -117,7 +117,7 @@
     </div>
   
 </div> 
-   <div class="bottom">&nbsp;Copyright &copy;&nbsp;2013 <a href="http://www.cocostudio.org" >CocoStudio.org</a>.&nbsp;All Rights Reserved.&nbsp;�汾v1.0.0 </div>
+   <div class="bottom">&nbsp;Copyright &copy;&nbsp;2013 <a href="http://www.cocostudio.org" >CocoStudio.org</a>.&nbsp;All Rights Reserved.&nbsp;版本v1.0.0 </div>
 </div>
 </body>
 </html>

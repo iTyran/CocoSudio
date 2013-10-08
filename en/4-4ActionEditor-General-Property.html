@@ -2,90 +2,90 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-<title>��������</title>
-<meta name="Keywords" content="CocoStudio,Cocos2d-x,cocos2d-iphone,2D��Ϸ����,��Ϸ��������" />
-<meta name="Description" content="CocoStudio�����ֲ�,CocoStudio�����ֲ�,��Ϸ�༭��ʹ�ð���,CocoStudio�û�ָ��"/>
+<title>骨骼属性</title>
+<meta name="Keywords" content="CocoStudio,Cocos2d-x,cocos2d-iphone,2D游戏引擎,游戏开发工具" />
+<meta name="Description" content="CocoStudio帮助手册,CocoStudio中文手册,游戏编辑器使用帮助,CocoStudio用户指南"/>
 <link type="text/css" rel="stylesheet" href="style/style.css"  />
 </head>
 <body id="split">
 <div id="content">
   <div rel="aboutXMLDoc"><h1 style="font-size: 36px; text-align:center; color:#999; margin:20px 0px 15px 0px; " >English version is coming soon...</h1>
-    <h2>��������</h2>
+    <h2>骨骼属性</h2>
     
-    <h3  id="properties">����</h3>
+    <h3  id="properties">常规</h3>
     <div class="desc">
         <div class="longdesc">
-        	<h4>����</h4>
+        	<h4>名字</h4>
             <div>
             	<p>&nbsp;</p>
-            	<p>���ù��������֡������ڴ�����ͨ�������ֻ�ȡ���ù�����ָ�롣</p>
+            	<p>设置骨骼的名字。可以在代码中通过该名字获取到该骨骼的指针。</p>
             	<p>&nbsp;</p>
         </div>
-              <h4>����</h4>
+              <h4>坐标</h4>
             <div>
             	<p>&nbsp;</p>
-            	<p>���ù�����ê��λ�á�����ԭ���ǻ��ƹ���ʱ����ʼλ�á�</p>
-            	<p>&nbsp;</p>
-         </div>
-             <h4>֡�¼�</h4>
-            <div>
-            	<p>&nbsp; </p>
-            	<p>���øù�����֡�¼����ơ�</p>
+            	<p>设置骨骼的锚点位置。坐标原点是绘制骨骼时的起始位置。</p>
             	<p>&nbsp;</p>
          </div>
-             <h4>��ת</h4>
+             <h4>帧事件</h4>
             <div>
             	<p>&nbsp; </p>
-            	<p>���ù�������ת�Ƕȣ�����ֵΪ�ÿؼ�������Ϊ���ĵ�˳ʱ����ת�Ķ�����</p>
+            	<p>设置该骨骼的帧事件名称。</p>
+            	<p>&nbsp;</p>
+         </div>
+             <h4>旋转</h4>
+            <div>
+            	<p>&nbsp; </p>
+            	<p>设置骨骼的旋转角度，属性值为该控件以轴心为中心点顺时针旋转的度数。</p>
             	<p>&nbsp;</p>
           </div>
             
             
             
-            <h4>��ʾ/����</h4>
+            <h4>显示/隐藏</h4>
             <div>
             	<p>&nbsp; </p>
-            	<p>�����Ƿ���ʾ������</p>
+            	<p>设置是否显示骨骼。</p>
             	<p>&nbsp;</p>
         </div>
-            <h4>��Ⱦ��Դ</h4>
+            <h4>渲染资源</h4>
             <div>
             	<p>&nbsp;</p>
-            	<p>���ù�������Ⱦ��ͼ��ͼƬ��</p>
+            	<p>设置骨骼的渲染贴图的图片。</p>
             	<p>&nbsp;</p>
           </div>
-            <h4>��������</h4>
+            <h4>父级名称</h4>
             <div>
             	<p>&nbsp;</p>
-            	<p>��ʾ�ÿؼ��ĸ������ơ�</p>
+            	<p>显示该控件的父级名称。</p>
             	<p>&nbsp;</p>
           </div>
            
            
-            <h4>����</h4>
+            <h4>缩放</h4>
             <div>
             	<p>&nbsp;</p>
-            	<p>���ù��������ű�������ΪX�����ź�Y�����š�ֵ����Ϊ����Ҳ����Ϊ��ֵ����Ϊ��ֵʱ����ʵ�ַ�תЧ����</p>
+            	<p>设置骨骼的缩放比例，分为X轴缩放和Y轴缩放。值可以为正，也可以为负值，当为负值时可以实现翻转效果。</p>
             	<p>&nbsp;</p>
           </div>
           
         
-            <h4>͸����</h4>
+            <h4>透明度</h4>
             <div>
             	<p>&nbsp;</p>
-            	<p>���ÿؼ���͸���ȡ�ȡֵ��ΧΪ0��255��0 Ϊ��͸����255Ϊ��͸����</p>
+            	<p>设置控件的透明度。取值范围为0到255。0 为纯透明，255为不透明。</p>
             	<p>&nbsp;</p>
           </div>
-            <h4>����</h4>
+            <h4>锁定</h4>
             <div>
             	<p>&nbsp;</p>
-            	<p>�����ù���/��ͼ���������󽫲��ܱ��༭��</p>
+            	<p>锁定该骨骼/贴图、，锁定后将不能被编辑。</p>
             	<p>&nbsp;</p>
             </div>
-            <h4>��ɫ���</h4>
+            <h4>颜色混合</h4>
             <div>
             	<p>&nbsp;</p>
-            	<p>���������ÿؼ��Ļ����ɫ����������˵���������ɫѡ���ѡ����ɫ��Ὣԭ�ؼ������ɫ���л����Ⱦ��</p>
+            	<p>此属性设置控件的混合颜色。点击下拉菜单后会出现颜色选择框，选择颜色后会将原控件与该颜色进行混合渲染。</p>
             	<p>&nbsp;</p>
             </div>
        	</div>
@@ -94,7 +94,7 @@
 
   
 </div>
-   <div class="bottom">&nbsp;Copyright &copy;&nbsp;2013 <a href="http://www.cocostudio.org" >CocoStudio.org</a>.&nbsp;All Rights Reserved.&nbsp;�汾v1.0.0 </div>
+   <div class="bottom">&nbsp;Copyright &copy;&nbsp;2013 <a href="http://www.cocostudio.org" >CocoStudio.org</a>.&nbsp;All Rights Reserved.&nbsp;版本v1.0.0 </div>
 </div>
 </body>
 </html>
