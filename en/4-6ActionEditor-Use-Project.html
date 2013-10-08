@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>项目使用</title>
+<meta name="Keywords" content="CocoStudio,Cocos2d-x,cocos2d-iphone,2D游戏引擎,游戏开发工具" />
+<meta name="Description" content="CocoStudio帮助手册,CocoStudio中文手册,游戏编辑器使用帮助,CocoStudio用户指南"/>
+<link type="text/css" rel="stylesheet" href="style/style.css"  />
+</head>
+<body id="split">
+<div id="content">
+  <div rel="aboutXMLDoc"><h1 style="font-size: 36px; text-align:center; color:#999; margin:20px 0px 15px 0px; " >English version is coming soon...</h1>
+    <h2>项目使用</h2>
+       <h3>导出</h3>
+        <div class="desc">
+            <ol>
+        	<li>选择<strong>菜单</strong>栏-><strong>导出项目</strong></li><br />
+        	<img src="img/4-6-img-01.png" alt="" />
+            <li>设置导出目录</li><br />
+           <img src="img/4-6-img-02.png" alt="" />
+            <li>点击确认并完成</li><br />
+            <img src="img/ExportOK.png" alt="" />
+        </ol>
+</div>
+       <h3>复制文件</h3>
+    <div class="desc">
+		<p>&nbsp;</p>
+		<p>将导出目录中的文件全部复制到项目的Resources文件夹中。</p>
+		<p>&nbsp;</p>
+    </div>
+    
+    <h3>使用</h3>
+    <div class="desc">
+		<p>将导出后的项目放到资源文件中。</p>
+		<div class="longdesc">
+			
+			<pre class="code">
+CCArmatureDataManager::sharedArmatureDataManager()->addArmatureFileInfo("Cowboy0.png","Cowboy0.plist","Cowboy.ExportJson");
+CCArmature *armature = CCArmature::create("Cowboy");
+armature->getAnimation()->playByIndex(0);
+armature->setScale(0.5f);
+armature->setPosition(ccp(visibleSize.width * 0.5, visibleSize.height * 0.5));
+this->addChild(armature,2)
+</pre>
+			
+		</div>
+    </div>
+ </div>
+   <div class="bottom">&nbsp;Copyright &copy;&nbsp;2013 <a href="http://www.cocostudio.org" >CocoStudio.org</a>.&nbsp;All Rights Reserved.&nbsp;版本v1.0.0 </div>
+</div>
+</body>
+</html>

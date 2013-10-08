@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>UI控件通用属性</title>
+<meta name="Keywords" content="CocoStudio,Cocos2d-x,cocos2d-iphone,2D游戏引擎,游戏开发工具" />
+<meta name="Description" content="CocoStudio帮助手册,CocoStudio中文手册,游戏编辑器使用帮助,CocoStudio用户指南"/>
+<link type="text/css" rel="stylesheet" href="style/style.css"  />
+</head>
+<body id="split">
+<div id="content">
+  <div rel="aboutXMLDoc"><h1 style="font-size: 36px; text-align:center; color:#999; margin:20px 0px 15px 0px; " >English version is coming soon...</h1>
+    <h2>UI控件通用属性</h2>
+     <h3  id="properties">尺寸和模式</h3>
+    <div class="desc">
+    	<h4>控件宽</h4>
+        <div>
+          <p>&nbsp;</p>
+          <p>设置控件的宽度，单位为像素。</p>
+          <p>&nbsp;</p>
+        </div>
+      <h4>控件高</h4>
+        <div>
+          <p>&nbsp;</p>
+          <p>设置控件的高度，单位为像素。</p>
+          <p>&nbsp;</p>
+        </div>
+        <h4>模式</h4>
+        <div>
+        <h5>Auto</h5>
+        <div class="desc">
+          <p>&nbsp;</p>
+          <p>自动模式</p>
+          <p>&nbsp;</p>
+        </div>
+         <h5>Custom</h5>
+        <div class="desc">
+          <p>&nbsp;</p>
+          <p>自定义模式</p>
+          <p>&nbsp;</p>
+        </div>
+        	<h5 id="ninebox">九宫格</h5>
+        	 <div class="desc">
+		<p>九宫格是利用一张很小的图片来绘制大区域图片却不失真的技术。</p>
+		<p>绘制时会遵循下面的规则：</p>
+		<div class="longdesc">
+			<p>&nbsp;</p>
+			<p>a. 保持4个角部分不变形</p>
+          <p>b. 单向拉伸4条边（即在4个角两两之间的边，比如上边，只做横向拉伸）</p>
+            <p>c. 双向拉伸中间部分（即九宫格的中间部分，横向，纵向同时拉伸，PS：拉伸比例不一定相同）</p>
+            <p>&nbsp;</p>
+		</div>
+        <p>CocoStudio共四个参数：</p>
+        <div class="longdesc">
+			<p>&nbsp;</p>
+			<p>"CapInsetsX"、"CapInsetsY"&nbsp;是一对参数，它可以确定我们中心区域的左下角的坐标（Cocos2d-x是左下角为原点）；</p>
+            <p> "CapInsetsWidth"、"CapInsetsHeight"则确定中心区域的大小；</p>
+            <p>&nbsp;</p>
+</div>
+      <div class="warning">
+        <p>&nbsp;</p>
+        <p>注意 ：</p>
+        <p>控件宽要大于2*X、控件高要大于2*Y，否则容易出现贴图错位现象。</p>
+        <p>设置九宫格属性后应将缩放属性值都设置为1，否则图片仍然会出现失真。</p>
+        <p>&nbsp;</p>
+      </div></div>
+        </div>
+    </div>
+    
+    
+ 
+    
+    
+    <h3  id="properties">UI常规属性</h3>
+    <div class="desc">
+        <div class="longdesc">
+        	<h4>交互</h4>
+            <div>
+            	<p>&nbsp; </p>
+            	<p>控制控件是否接受用户事件，如果该控件需要接受用户事件（如按钮），则需勾选。</p>
+            	<p>&nbsp; </p>
+          </div>
+            <h4>显示/隐藏</h4>
+            <div>
+            	<p>&nbsp; </p>
+            	<p>控制控件是否显示。用户可以把一些控件在开始状态下不显示，后期通过代码再显示出来。但是无论显示与否该控件都将被初始化加载到内存中。</p>
+            	<p>&nbsp;</p>
+        </div>
+            <h4>垂直翻转</h4>
+            <div>
+            	<p>&nbsp; </p>
+            	<p>勾选此项，该控件会显示垂直映像</p>
+            	<p>&nbsp;</p>
+        </div>
+            <h4>水平翻转</h4>
+            <div>
+            	<p>&nbsp; </p>
+            	<p>勾选此项，该控件会显示水平映像</p>
+            	<p>&nbsp;</p>
+          </div>
+            <h4>Tag</h4>
+            <div>
+            	<p>&nbsp;</p>
+            	<p>设置控件的Tag，程序中可以通过该Tag值获取该控件。</p>
+            	<p>&nbsp;</p>
+          </div>
+            <h4>旋转</h4>
+            <div>
+            	<p>&nbsp; </p>
+            	<p>设置控件的选择属性，属性值为该控件以锚点为中心顺时针旋转的度数。</p>
+            	<p>&nbsp;</p>
+          </div>
+            <h4>缩放</h4>
+            <div>
+            	<p>&nbsp;</p>
+            	<p>设置控件的缩放比例，分为X轴缩放和Y轴缩放。值可以为正，也可以为负值，当为负值时可以实现翻转效果</p>
+            	<p>&nbsp;</p>
+          </div>
+            <h4>位置</h4>
+            <div>
+            	<p>&nbsp;</p>
+            	<p>设置控件的锚点位置，默认锚点是控件的中心点。坐标原点是左下角。</p>
+            	<p>&nbsp;</p>
+          </div>
+            <h4>锚点</h4>
+            <div>
+            	<p>&nbsp; </p>
+            	<p>设置锚点位置，默认值为0.5/0.5即中心点。</p>
+            	<p>&nbsp;</p>
+          </div>
+            <h4>渲染层级</h4>
+            <div>
+            	<p>&nbsp;</p>
+            	<p>设置控件渲染的先后顺序。值越小越先渲染，但是可能会被后渲染的覆盖。</p>
+            	<p>&nbsp;</p>
+          </div>
+            <h4>透明度</h4>
+            <div>
+            	<p>&nbsp;</p>
+            	<p>设置控件的透明度。取值范围为0到255。0 为纯透明，255为不透明。</p>
+            	<p>&nbsp;</p>
+          </div>
+            <h4>颜色混合</h4>
+            <div>
+            	<p>&nbsp;</p>
+            	<p>此属性设置控件的混合颜色。点击下拉菜单后会出现颜色选择框，选择颜色后会将原控件与该颜色进行混合渲染。</p>
+            	<p>&nbsp;</p>
+          </div>
+       	</div>
+   
+    </div>
+
+ 
+</div>
+   <div class="bottom">&nbsp;Copyright &copy;&nbsp;2013 <a href="http://www.cocostudio.org" >CocoStudio.org</a>.&nbsp;All Rights Reserved.&nbsp;版本v1.0.0 </div>
+</div>
+</body>
+</html>

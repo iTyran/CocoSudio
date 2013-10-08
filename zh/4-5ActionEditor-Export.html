@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>导出项目</title>
+<meta name="Keywords" content="CocoStudio,Cocos2d-x,cocos2d-iphone,2D游戏引擎,游戏开发工具" />
+<meta name="Description" content="CocoStudio帮助手册,CocoStudio中文手册,游戏编辑器使用帮助,CocoStudio用户指南"/>
+<link type="text/css" rel="stylesheet" href="style/style.css"  />
+</head>
+<body id="split">
+<div id="content">
+  <div rel="aboutXMLDoc">
+    <h2>导出项目</h2>
+    <h3>导出</h3>
+    <div class="desc">
+      <ol>
+        <p><img src="img/4-5-img-01.png" alt="" /></p>
+        <p><br />
+        </p>
+      </ol>
+		
+  </div>
+    
+     <h3>功能</h3>
+    <div class="desc">
+    	
+        	<h4>图片最大宽度</h4>
+            <div>
+              <p>&nbsp;</p>
+              <p>合成图片的最大宽度 。</p>
+              <p>&nbsp;</p>
+            </div>
+            
+            
+            <h4>图片最大高度</h4>
+            <div>
+              <p>&nbsp;</p>
+              <p>合成图片的最大高度 。</p>
+              <p>&nbsp;</p>
+      </div>
+            
+            
+            <h4>碎图缝隙</h4>
+            <div>
+              <p>&nbsp;</p>
+              <p>合成大图中的小图之间的缝隙像素。</p>
+              <p>&nbsp;</p>
+      </div>
+            
+            
+            <h4>排序样式</h4>
+            <div>
+              <h5>Sample</h5>
+            <div>
+              <p>&nbsp;</p>
+              <p>简单排列，根据指定的宽和高，先从左到右横向排列图片资源，到达最大宽度后，返回左边，在排列完成的资源的下边继续横向排列资源，直到所有可以排列进来的资源排列完结</p>
+              <p>&nbsp;</p>
+            </div>
+            <h5>Normal</h5>
+            <div>
+              <p>&nbsp;</p>
+              <p>智能顺序排列，根据指定的宽和高，先从左到右横向排列图片资源，到达最大宽度后，计算一排资源的空白区域数据，继续在空白区域排列资源，直到资源无法排进空白区域，返回最左边，继续横向排列资源，直到所有可以排列进来的资源排列完结。</p>
+              <p>&nbsp;</p>
+            </div>
+            <h5>Interliger</h5>
+            <div>
+              <p>&nbsp;</p>
+              <p>Interliger:智能区域排列，根据指定的宽和高，开始排列图片资源，从左到右，从上到下，同时进行，计算每一行和每一列的空白区域，进行图片资源的排列，这种排列方式，所有的图片资源都是从左上排列到右下；</p>
+              <p>&nbsp;</p>
+            </div>
+      </div>
+            
+            
+            
+          
+            
+            
+            <h4>导出格式</h4>
+            <div>
+              <p>&nbsp;</p>
+              <p>选择导出的图片格式，可选.png 、 .Jpeg。</p>
+              <p>&nbsp;</p>
+      </div>
+            
+            
+            <h4>裁切</h4>
+            <div>
+              <p>&nbsp;</p>
+              <p>对图片的空白区域进行裁切，然后才进行合成。</p>
+              <p>&nbsp;</p>
+              <div class="warning">
+                <p>&nbsp;</p>
+                <p>当工程中使用的图片合并后的尺寸大于设定的图片尺寸，程序将自动分割合并后的图片成多组合并图片，并添加序列下标； </p>
+                <p>&nbsp;</p>
+              </div>
+      </div>
+            
+            
+            <h4>导出路径</h4>
+            <div>
+              <p>&nbsp;</p>
+              <p>定义导出路径，默认路径是用户的当前工程下的Exprot文件夹下</p>
+              <p>&nbsp;</p>
+      </div>
+              <h4>进度条</h4>
+            <div>
+              <p>&nbsp;</p>
+              <p>导出资源的进度条。显示当前导出进度、</p>
+              <p>&nbsp;</p>
+      </div>
+            
+            <h4>导出使用图片</h4>
+            <div>
+                 
+               <h5>导出大图</h5>
+            <div>
+              <p>&nbsp;</p>
+              <p>1.导出工程中使用的图片资源，会将图片进行合成。</p>
+              <p> 2.导出的目录下会生成.ExportJson文件和其对应的.Plist文件</p>
+              <p>&nbsp;</p>
+<p>&nbsp;</p>
+            </div>
+            <div class="warning">
+              <p>注意：在项目中使用时直接将导出Exprot文件夹下的整个项目文件复制到项目中使用，不要自己修改里面的资源层级等以免运行出错。 </p>
+            </div>
+      </div>
+              <h4>导出所有图片</h4>
+            <div>
+             
+              <h5>导出大图</h5>
+            <div>
+              <p>&nbsp;</p>
+              <p> 1.导出工程Resources文件夹下所有的图片资源，会将图片进行合成。              </p>
+              <p> 2.导出的目录下会生成.ExportJson文件和其对应的.Plist文件</p>
+              <p>&nbsp;</p>
+<p>&nbsp;</p>
+            </div>
+             <div class="warning">
+              <p>注意：在项目中使用时直接将导出Exprot文件夹下的整个项目文件复制到项目中使用，不要自己修改里面的资源层级等以免运行出错。 </p>
+             </div>
+      </div>
+            
+            
+          
+    </div>
+ 
+    
+
+  
+ 
+ </div>
+    <div class="bottom">&nbsp;Copyright &copy;&nbsp;2013 <a href="http://www.cocostudio.org" >CocoStudio.org</a>.&nbsp;All Rights Reserved.&nbsp;版本v1.0.0 </div>
+</div>
+</body>
+</html>
