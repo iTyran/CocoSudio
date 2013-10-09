@@ -6,82 +6,56 @@
 </head>
 <body>
 <div class="dtree">
-<p><a href="javascript: d.openAll();">全部展开</a> | <a href="javascript: d.closeAll();">全部折叠 </a></p>
+<p><a href="javascript: d.openAll();">Expand All</a> | <a href="javascript: d.closeAll();">Collapse All</a></p>
 <script type="text/javascript"><!--
 d = new dTree("d");
-d.add(0,-1,"CocoStudio帮助手册","");
+d.add(0,-1,"CocoStudio User Guide","");
 
-d.add(1,0,"简介","1CocoStudio-Intro.html");
+d.add(1,0,"Introduction","1CocoStudio-Intro.html");
 
-d.add(2,0,"软件管理","2Soft-Manage.html");
+d.add(2,0,"Soft Manage","2Soft-Manage.html");
 
-d.add(3,0,"UI编辑器","");
-d.add(4,3,"UI编辑器简介","3-1UIEditor-Intro.html");
+d.add(3,0,"UI Editor","");
+d.add(4,3,"UI Editor Introduction","3-1UIEditor-Intro.html");
 
-d.add(5,3,"工作区","");
-d.add(6,5,"工作区简介","3-2-1UIEditor-Panle.html");
-d.add(7,5,"渲染面板","3-2-2UIEditor-Panle-Render.html");
-d.add(8,5,"对象结构面板","3-2-3UIEditor-Panle-ObjectStructure.html");
+d.add(5,3,"Workspace","");
+d.add(6,5,"Workspace Introduction","3-2-1UIEditor-Panle.html");
+d.add(7,5,"Render Panel","3-2-2UIEditor-Panle-Render.html");
+d.add(8,5,"Object Structure Panel","3-2-3UIEditor-Panle-ObjectStructure.html");
 
-d.add(9,5,"UI动画列表面板","3-2-4UIEditor-Panle-UIActionList.html");
+d.add(9,5,"UI ActionList Panel","3-2-4UIEditor-Panle-UIActionList.html");
 
-d.add(10,5,"UI动画帧面板","3-2-5UIEditor-Panle-UIActionFrame.html");
-d.add(11,5,"属性面板","3-2-6UIEditor-Panle-Properties.html");
-d.add(12,5,"资源面板","3-2-7UIEditor-Panle-Resource.html");
-d.add(13,5,"画布列表面板","3-2-8UIEditor-Panle-CanvasList.html");
-d.add(14,5,"输出面板","3-2-9UIEditor-Panle-Output.html");
-d.add(15,5,"控件面板","3-2-10UIEditor-Panle-Controls.html");
-d.add(16,5,"预览面板","3-2-11UIEditor-Panle-Preview.html");
-d.add(17,5,"菜单栏","3-2-12UIEditor-Panle-Menu.html");
-d.add(18,5,"快捷菜单面板","3-2-13UIEditor-Panle-ExpressTools.html");
+d.add(10,5,"UIActionFrame Panel","3-2-5UIEditor-Panle-UIActionFrame.html");
+d.add(11,5,"Property Panel","3-2-6UIEditor-Panle-Properties.html");
+d.add(12,5,"Resource Panel","3-2-7UIEditor-Panle-Resource.html");
+d.add(13,5,"Canvas List Panel","3-2-8UIEditor-Panle-CanvasList.html");
+d.add(14,5,"Output Panel","3-2-9UIEditor-Panle-Output.html");
+d.add(15,5,"control Panel","3-2-10UIEditor-Panle-Controls.html");
+d.add(16,5,"Preview Panel","3-2-11UIEditor-Panle-Preview.html");
+d.add(17,5,"Menu Bar","3-2-12UIEditor-Panle-Menu.html");
+d.add(18,5,"Express Tools","3-2-13UIEditor-Panle-ExpressTools.html");
 
-d.add(19,5,"状态栏","3-2-14UIEditor-Panle-StatusBar.html");
+d.add(19,5,"Status Bar","3-2-14UIEditor-Panle-StatusBar.html");
 
-d.add(20,3,"UI控件","");
-d.add(21,20,"UI控件简介","3-3-1UIEditor-Controls.html");
-d.add(22,20,"按钮[UIButton]","3-3-2UIEditor-Controls-UIButton.html");
-d.add(23,20,"复选框[UICheckBox]","3-3-3UIEditor-Controls-UICheckBox.html");
-d.add(24,20,"图片[UIImageView]","3-3-4UIEditor-Controls-UIImageView.html");
-d.add(25,20,"文本[UILable]","3-3-5UIEditor-Controls-UILable.html");
-d.add(26,20,"数字标签[UILableAtlas]","3-3-6UIEditor-Controls-UILableAtlas.html");
-d.add(27,20,"自定义字体[UILableBMFFont]","3-3-7UIEditor-Controls-UILableBMFont.html");
-d.add(28,20,"进度条[UILoadingBar]","3-3-8UIEditor-Controls-UILoadingBar.html");
-d.add(29,20,"层容器[UIPanel]","3-3-9UIEditor-Controls-UIPanel.html");
-d.add(30,20,"滚动层[UIScrollView]","3-3-10UIEditor-Controls-UIScrollView.html");
-d.add(31,20,"滑动条[UISlider]","3-3-11UIEditor-Controls-UISlider.html");
-d.add(32,20,"文本区[UITextArea]","3-3-12UIEditor-Controls-UITextArea.html");
-d.add(33,20,"文本按钮[UITextButton]","3-3-13UIEditor-Controls-UITextButton.html");
-d.add(34,20,"输入框[UIField]","3-3-14UIEditor-Controls-UIField.html");
-d.add(35,20,"拖拽层[UIDragPanel]","3-3-15UIEditor-Controls-UIDragPanel.html");
-d.add(36,20,"UI控件通用属性","3-3-16UIEditor-General-Property.html");
-d.add(37,3,"导出UI项目","3-4UIEditor-Export.html");
-d.add(38,3,"在项目中使用","3-5UIEditor-Use-Project.html");
-
-
-
-
-
-
-
-d.add(39,0,"动作编辑器","");
-d.add(40,39,"简介","4-1ActionEditor-Intro.html");
-d.add(41,39,"工作区","");
-d.add(42,41,"工作区简介","4-2-1ActionEditor-Panle.html");
-d.add(43,41,"渲染面板","4-2-2ActionEditor-Panle-Render.html");
-d.add(44,41,"资源管理面板","4-2-3ActionEditor-Panle-ResourceManger.html");
-d.add(45,41,"属性面板","4-2-4ActionEditor-Panle-Properties.html");
-d.add(46,41,"资源面板","4-2-5ActionEditor-Panle-Resource.html");
-d.add(47,41,"动作列表面板","4-2-6ActionEditor-Panle-ActionList.html");
-d.add(48,41,"对象结构面板","4-2-7ActionEditor-Panle-ObjectStructure.html");
-d.add(49,41,"动画帧面板","4-2-8ActionEditor-Panle-ActionFrame.html");
-d.add(50,41,"输出面板","4-2-9ActionEditor-Panle-Output.html");
-d.add(51,41,"预览面板","4-2-10ActionEditor-Panle-Preview.html");
-d.add(52,41,"菜单栏","4-2-11ActionEditor-Panle-Menu.html");
-d.add(53,41,"快捷工具面板","4-2-12ActionEditor-Panle-ExpressTools.html");
-d.add(54,39,"常用操作","4-3ActionEditor-Common-Operations.html");
-d.add(55,39,"骨骼属性","4-4ActionEditor-General-Property.html");
-d.add(56,39,"导出项目","4-5ActionEditor-Export.html");
-d.add(57,39,"在项目中使用","4-6ActionEditor-Use-Project.html");
+d.add(20,3,"UI Control","");
+d.add(21,20,"UI Control Introduction","3-3-1UIEditor-Controls.html");
+d.add(22,20,"UIButton","3-3-2UIEditor-Controls-UIButton.html");
+d.add(23,20,"UICheckBox","3-3-3UIEditor-Controls-UICheckBox.html");
+d.add(24,20,"UIImageView","3-3-4UIEditor-Controls-UIImageView.html");
+d.add(25,20,"UILable","3-3-5UIEditor-Controls-UILable.html");
+d.add(26,20,"UILableAtlas","3-3-6UIEditor-Controls-UILableAtlas.html");
+d.add(27,20,"UILableBMFFont","3-3-7UIEditor-Controls-UILableBMFont.html");
+d.add(28,20,"UILoadingBar","3-3-8UIEditor-Controls-UILoadingBar.html");
+d.add(29,20,"UIPanel","3-3-9UIEditor-Controls-UIPanel.html");
+d.add(30,20,"UIScrollView","3-3-10UIEditor-Controls-UIScrollView.html");
+d.add(31,20,"UISlider","3-3-11UIEditor-Controls-UISlider.html");
+d.add(32,20,"UITextArea","3-3-12UIEditor-Controls-UITextArea.html");
+d.add(33,20,"UITextButton","3-3-13UIEditor-Controls-UITextButton.html");
+d.add(34,20,"UIField","3-3-14UIEditor-Controls-UIField.html");
+d.add(35,20,"UIDragPanel","3-3-15UIEditor-Controls-UIDragPanel.html");
+d.add(36,20,"General Property","3-3-16UIEditor-General-Property.html");
+d.add(37,3,"Export","3-4UIEditor-Export.html");
+d.add(38,3,"How to use","3-5UIEditor-Use-Project.html");
 
 
 
@@ -89,42 +63,68 @@ d.add(57,39,"在项目中使用","4-6ActionEditor-Use-Project.html");
 
 
 
-
-d.add(58,0,"场景编辑器","");
-
-d.add(59,58,"简介","5-1SceneEditor-Intro.html");
-d.add(60,58,"工作区","");
-d.add(61,60,"工作区简介","5-2-1SceneEditor-Panle.html");
-
-d.add(62,60,"渲染面板","5-2-2SceneEditor-Panle-Render.html");
-d.add(63,60,"对象结构面板","5-2-3SceneEditor-Panle-ObjectStructure.html");
-d.add(64,60,"属性面板","5-2-4SceneEditor-Panle-Properties.html");
-d.add(65,60,"资源面板","5-2-5SceneEditor-Panle-Resource.html");
-d.add(66,60,"输出面板","5-2-6SceneEditor-Panle-Output.html");
-d.add(67,60,"组件面板","5-2-7SceneEditor-Panle-subassembly.html");
-d.add(68,60,"预览面板","5-2-8SceneEditor-Panle-Preview.html");
-d.add(69,60,"菜单栏","5-2-9SceneEditor-Panle-Menu.html");
-d.add(70,60,"快捷工具","5-2-10SceneEditor-Panle-ExpressTools.html");
-
-d.add(71,60,"状态栏","5-2-11SceneEditor-Panle-StatusBar.html");
-
-d.add(72,58,"组件","");
-
-d.add(73,72,"组件简介","5-3-1SceneEditor-Subassembly.html");
-d.add(74,72,"精灵组件","5-3-2SceneEditor-subassembly-Spirit.html");
-d.add(75,72,"地图组件","5-3-3SceneEditor-subassembly-Map.html");
-d.add(76,72,"粒子组件","5-3-4SceneEditor-subassembly-particle.html");
-d.add(77,72,"骨骼组件","5-3-5SceneEditor-subassembly-Armature.html");
-d.add(78,72,"声音组件","5-3-6SceneEditor-subassembly-ComAudio.html");
-d.add(79,72,"UI组件","5-3-7SceneEditor-subassembly-GUIComponent.html");
-d.add(80,72,"自定义属性组件","5-3-8SceneEditor-subassembly-ComAttribute.html");
-d.add(81,72,"Scene组件通用属性","5-3-9SceneEditor-General-Property.html");
-d.add(82,58,"在项目中使用","5-4SceneEditor-Use-Project.html");
+d.add(39,0,"Animation Editor","");
+d.add(40,39,"Introduction","4-1ActionEditor-Intro.html");
+d.add(41,39,"Workspace","");
+d.add(42,41,"Workspace Introduction","4-2-1ActionEditor-Panle.html");
+d.add(43,41,"Render Panel","4-2-2ActionEditor-Panle-Render.html");
+d.add(44,41,"Resource Manger Panel","4-2-3ActionEditor-Panle-ResourceManger.html");
+d.add(45,41,"Properties Panel","4-2-4ActionEditor-Panle-Properties.html");
+d.add(46,41,"Resource Panel","4-2-5ActionEditor-Panle-Resource.html");
+d.add(47,41,"ActionList Panel","4-2-6ActionEditor-Panle-ActionList.html");
+d.add(48,41,"ObjectStructure Panel","4-2-7ActionEditor-Panle-ObjectStructure.html");
+d.add(49,41,"ActionFrame Panel","4-2-8ActionEditor-Panle-ActionFrame.html");
+d.add(50,41,"Output Panel","4-2-9ActionEditor-Panle-Output.html");
+d.add(51,41,"Preview Panel","4-2-10ActionEditor-Panle-Preview.html");
+d.add(52,41,"Menu Bar","4-2-11ActionEditor-Panle-Menu.html");
+d.add(53,41,"ExpressTools Panel","4-2-12ActionEditor-Panle-ExpressTools.html");
+d.add(54,39,"Common Operations","4-3ActionEditor-Common-Operations.html");
+d.add(55,39,"General Property","4-4ActionEditor-General-Property.html");
+d.add(56,39,"Export","4-5ActionEditor-Export.html");
+d.add(57,39,"How to use","4-6ActionEditor-Use-Project.html");
 
 
-d.add(83,0,"其他","");
-d.add(84,83,"术语表","7-1Help-glossary.html");
-d.add(85,83,"备份恢复","7-2Help-AccidentRecovery.html");
+
+
+
+
+
+
+d.add(58,0,"Scene Editor","");
+
+d.add(59,58,"Introduction","5-1SceneEditor-Intro.html");
+d.add(60,58,"Workspace","");
+d.add(61,60,"Workspace Introduction","5-2-1SceneEditor-Panle.html");
+
+d.add(62,60,"Render Render","5-2-2SceneEditor-Panle-Render.html");
+d.add(63,60,"Object Structure Render","5-2-3SceneEditor-Panle-ObjectStructure.html");
+d.add(64,60,"Properties Render","5-2-4SceneEditor-Panle-Properties.html");
+d.add(65,60,"Resource Render","5-2-5SceneEditor-Panle-Resource.html");
+d.add(66,60,"Output Render","5-2-6SceneEditor-Panle-Output.html");
+d.add(67,60,"subassembly Render","5-2-7SceneEditor-Panle-subassembly.html");
+d.add(68,60,"Preview Render","5-2-8SceneEditor-Panle-Preview.html");
+d.add(69,60,"Menu Bar","5-2-9SceneEditor-Panle-Menu.html");
+d.add(70,60,"Express Tools Render","5-2-10SceneEditor-Panle-ExpressTools.html");
+
+d.add(71,60,"StatusBar","5-2-11SceneEditor-Panle-StatusBar.html");
+
+d.add(72,58,"component","");
+
+d.add(73,72,"component Introduction","5-3-1SceneEditor-Subassembly.html");
+d.add(74,72,"Spirit component","5-3-2SceneEditor-subassembly-Spirit.html");
+d.add(75,72,"Map component","5-3-3SceneEditor-subassembly-Map.html");
+d.add(76,72,"particle component","5-3-4SceneEditor-subassembly-particle.html");
+d.add(77,72,"Armature component","5-3-5SceneEditor-subassembly-Armature.html");
+d.add(78,72,"ComAudio component","5-3-6SceneEditor-subassembly-ComAudio.html");
+d.add(79,72,"GUI component","5-3-7SceneEditor-subassembly-GUIComponent.html");
+d.add(80,72,"Attribute component","5-3-8SceneEditor-subassembly-ComAttribute.html");
+d.add(81,72,"General Property","5-3-9SceneEditor-General-Property.html");
+d.add(82,58,"How to use","5-4SceneEditor-Use-Project.html");
+
+
+d.add(83,0,"Other","");
+d.add(84,83,"Glossary","7-1Help-glossary.html");
+d.add(85,83,"Accident Recovery","7-2Help-AccidentRecovery.html");
 
 
 
