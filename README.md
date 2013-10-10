@@ -1,4 +1,4 @@
-CocoSudio
+CocoStudio
 =========
 
 Tutorials of CocoStudio
