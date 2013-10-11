@@ -1,85 +1,85 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml11.dtd">
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-<title>����ṹ���</title>
-<meta name="Keywords" content="CocoStudio,Cocos2d-x,cocos2d-iphone,2D��Ϸ����,��Ϸ��������" />
-<meta name="Description" content="CocoStudio�����ֲ�,CocoStudio�����ֲ�,��Ϸ�༭��ʹ�ð���,CocoStudio�û�ָ��"/>
+<title>对象结构面板</title>
+<meta name="Keywords" content="CocoStudio,Cocos2d-x,cocos2d-iphone,2D游戏引擎,游戏开发工具" />
+<meta name="Description" content="CocoStudio帮助手册,CocoStudio中文手册,游戏编辑器使用帮助,CocoStudio用户指南"/>
 <link type="text/css" rel="stylesheet" href="style/style.css"  />
 </head>
 <body id="split">
 <div id="content">
   <div rel="aboutXMLDoc">
-    <h2>����ṹ���</h2>
-    <h3>���</h3>
+    <h2>对象结构面板</h2>
+    <h3>简介</h3>
     <div class="desc">
 		
 	  <p><img src="img/4-2-7-img-01.png" alt="" /></p>
 		<p>&nbsp; </p>
-		<p>����ṹ������ʾ�˵�ǰ�������������в���Ϣ��</p>
-		<p>����֧�����ز㣬�����㣬�ı��zorder����������Ȳ�����</p>
+		<p>对象结构窗口显示了当前骨骼动画的所有层信息。</p>
+		<p>窗口支持隐藏层，锁定层，改变层zorder，重命名层等操作。</p>
 		<p>&nbsp;</p>
     </div>
-     <h3>����</h3>
+     <h3>功能</h3>
     <div class="desc">
     	
-        	<h4>��ʾ/����</h4>
+        	<h4>显示/隐藏</h4>
             <div>
               <p>&nbsp;</p>
-              <p>1.����ṹ���ϵ�&quot;С�۾�&quot;ͼ�� ���ÿؼ�����ʾ���ء�</p>
-              <p> 2.�������ʾ����������������ʾ/������ͬ���ģ������������ÿؼ���Visible���ԡ�</p>
+              <p>1.点击结构树上的&quot;小眼睛&quot;图标 设置控件的显示隐藏。</p>
+              <p> 2.这里的显示隐藏与属性区的显示/隐藏是同步的，都可用于设置控件的Visible属性。</p>
               <p><br />
               </p>
       </div>
-           <h4>����/����</h4>
+           <h4>锁定/解锁</h4>
             <div>
               <p>&nbsp;</p>
-              <p>1.����ṹ���ϵ�&quot;Сͭ��&quot;ͼ�� ���ÿؼ�������/������</p>
-<p> 2.�ؼ������󽫻����������ؼ������в�����</p>
+              <p>1.点击结构树上的&quot;小铜锁&quot;图标 设置控件的锁定/解锁。</p>
+<p> 2.控件锁定后将会屏蔽锁定控件的所有操作。</p>
 <p>&nbsp;</p>
                   
      		</div>
-             <h4>�㼶����</h4>
+             <h4>层级调整</h4>
             <div>
               <p><img src="img/4-2-7-img-02.png" alt="" /></p>
-              <p>�����㼶zorder��ı�˲㼶����ʾ˳���ڶ���ṹ���ڵ���zorder��Ӱ�쵽���е�֡��zorder��zorder��Ĳ㼶���ϣ��������ϲ�Ĳ㼶zorder��󡣿��Ե�ѡ���ѡ�����㼶��</p>
+              <p>调整层级zorder会改变此层级的显示顺序，在对象结构窗口调整zorder会影响到所有的帧的zorder。zorder大的层级在上，所有最上层的层级zorder最大。可以单选或多选调整层级。</p>
               <p>&nbsp;</p>
               <table cellspacing="0" cellpadding="0" border="1">
            
                 <tr>
                   <td ><img src="style/b1.png" alt="" /></td>
-                  <td width="302">����ǰ�ڵ������ƶ�һ��</td>
+                  <td width="302">将当前节点向上移动一层</td>
                 </tr>
                 <tr>
                   <td><img src="style/b2.png" alt="" /></td>
-                  <td>����ǰ�ڵ������ƶ�һ��</td>
+                  <td>将当前节点向下移动一层</td>
                 </tr>
                 <tr>
                   <td><img src="style/b3.png" alt="" /></td>
-                  <td>����ǰ�ڵ����</td>
+                  <td>将当前节点最顶层</td>
                 </tr>
                 <tr>
                   <td><img src="style/b4.png" alt="" /></td>
-                  <td>����ǰ�ڵ���ײ�</td>
+                  <td>将当前节点最底层</td>
                 </tr>
               </table>
               <p>&nbsp;</p>
                   
       </div>
             
-              <h4>��������֡����</h4>
+              <h4>创建序列帧动画</h4>
             <div>
               <p>&nbsp;</p>
-              <p>��������Դ������ѡ��һ�����߶����Դ��ס�������ϵ��˲㼶�ϣ��㼶���ڵ�ǰ�������Զ�������Ӧ��Ŀ��֡��ÿһ֡��Ӧ����ʾ����Ϊ��Ӧ����Դ��ÿһ֡���Ϊ5֡��</p>
+              <p>可以在资源窗口中选中一个或者多个资源后按住鼠标左键拖到此层级上，层级会在当前动作中自动创建相应数目的帧，每一帧对应的显示对象为相应的资源，每一帧间隔为5帧。</p>
               <p>&nbsp;</p>
                   
 	      </div>
-           <h4>��ѡ�㼶</h4>
+           <h4>多选层级</h4>
            <div>
              <p>&nbsp;</p>
-             <p>1.ѡ��һ���㼶����סshift������ѡһ���㼶</p>
-<p> 2.��סctrl��ѡ�����㼶</p>
-              <p> 3.��סctrl+aѡ�����в㼶</p>
+             <p>1.选中一个层级，按住shift键，再选一个层级</p>
+<p> 2.按住ctrl键选择多个层级</p>
+              <p> 3.按住ctrl+a选择所有层级</p>
               <p>&nbsp;</p>
                   
       </div>
@@ -88,26 +88,26 @@
 
     
   
-    <h3>�Ҽ��˵�</h3>
+    <h3>右键菜单</h3>
     <div class="desc">
     <img src="img/4-2-7-img-03.png" alt="" />
 <div class="longdesc">
     
-      <h4>���ӽڵ�</h4>
+      <h4>添加节点</h4>
         <div>
-          <p>�ڵ�ǰλ������һ���µĽڵ㡣        </p>
+          <p>在当前位置添加一个新的节点。        </p>
           <p>&nbsp;</p>
         </div>
-      <h4>�����ڵ�</h4>
+      <h4>拷贝节点</h4>
       <div>
         <p>&nbsp;</p>
-        <p>������ǰ�ڵ㵽�ڵ��б���ĩβ��</p>
+        <p>拷贝当前节点到节点列表的末尾。</p>
         <p>&nbsp;</p>
       </div>
-       <h4>ɾ���ڵ�</h4>
+       <h4>删除节点</h4>
         <div>
           <p>&nbsp;</p>
-          <p>����ǰ�ڵ�ɾ����          </p>
+          <p>将当前节点删除。          </p>
           <p>&nbsp;</p>
         </div>
 </div>
@@ -115,7 +115,7 @@
 
   </div>
 </div>
-    <div class="bottom">&nbsp;Copyright &copy;&nbsp;2013 <a href="http://www.cocostudio.org" >CocoStudio.org</a>.&nbsp;All Rights Reserved.&nbsp;�汾v1.0.0 </div>
+    <div class="bottom">&nbsp;Copyright &copy;&nbsp;2013 <a href="http://www.cocostudio.org" >CocoStudio.org</a>.&nbsp;All Rights Reserved.&nbsp;版本v1.0.0 </div>
 </div>
 </body>
 </html>
