@@ -1,127 +1,127 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml11.dtd">
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-<title>��ק��[UIDragPanel]</title>
-<meta name="Keywords" content="CocoStudio,Cocos2d-x,cocos2d-iphone,2D��Ϸ����,��Ϸ��������" />
-<meta name="Description" content="CocoStudio�����ֲ�,CocoStudio�����ֲ�,��Ϸ�༭��ʹ�ð���,CocoStudio�û�ָ��"/>
+<title>拖拽层[UIDragPanel]</title>
+<meta name="Keywords" content="CocoStudio,Cocos2d-x,cocos2d-iphone,2D游戏引擎,游戏开发工具" />
+<meta name="Description" content="CocoStudio帮助手册,CocoStudio中文手册,游戏编辑器使用帮助,CocoStudio用户指南"/>
 <link type="text/css" rel="stylesheet" href="style/style.css"  />
 </head>
 <body id="split">
 <div id="content">
   <div rel="aboutXMLDoc">
-    <h2>��ק��[UIDragPanel]</h2>
+    <h2>拖拽层[UIDragPanel]</h2>
     
-    <h3>ͼ��</h3>
+    <h3>图标</h3>
     <div class="desc">
     <div class="descimg"><img src="img/3-3-15-img-01.png" alt="" /></div>
     </div>
-    <h3>����</h3>
+    <h3>描述</h3>
     <div class="desc">
-		<p>UIDragPanel������һ��UIWidget���࣬��ʵ�����ڴ������ϵ���ק�㡣<br />
+		<p>UIDragPanel的类是一个UIWidget子类，它实现了在触摸屏上的拖拽层。<br />
 		</p>
 		<div class="longdesc">
-		  <p>����һ����ק��ʱ�����¼��Ͷ�����Ϣ���͵�Ŀ�����ʱ���趨��Ŀ����ж��������̳���UIWidget���ÿؼ��ṩ�˷�����������ק��Ĳ��У���ʾ������ߣ���ק������ߣ�����ɫ͸���ȣ������ɫ��ͼƬ��Դ�����ԡ�</p>
+		  <p>触摸一个拖拽层时拦截事件和动作消息发送到目标对象时。设定的目标和行动方法都继承自UIWidget。该控件提供了方法来设置拖拽层的裁切，显示区域宽高，拖拽区域宽高，背景色透明度，填充颜色，图片资源等属性。</p>
 		  <p>&nbsp;</p>
 			
 		</div>
     </div>
-	<h3>�Ź�������</h3>
+	<h3>九宫格属性</h3>
     <div class="desc">
     	<p>&nbsp;</p>
-    	<p>��鿴<a href="3-3-16UIEditor-General-Property.html#ninebox">UI�ؼ��Ź�������ҳ</a></p>
+    	<p>请查看<a href="3-3-16UIEditor-General-Property.html#ninebox">UI控件九宫格属性页</a></p>
     	<p>&nbsp;</p>
     </div>
-    <h3>��������</h3>
+    <h3>常规属性</h3>
     <div class="desc">
     	<p>&nbsp;</p>
-    	<p>��鿴<a href="3-3-16UIEditor-General-Property.html#properties">UI�ؼ���������ҳ</a></p>
+    	<p>请查看<a href="3-3-16UIEditor-General-Property.html#properties">UI控件常规属性页</a></p>
     	<p>&nbsp;</p>
     </div>
     
-    <h3>����</h3>
+    <h3>特性</h3>
     <div class="desc">
     	<div descimg><img src="img/3-3-15-img-02.png"/></div>
 
-        	<h4>ģ��ü�</h4>
+        	<h4>模拟裁剪</h4>
             <div class="desc">
               <p>&nbsp;</p>
-              <p>���ص��ؼ���ʾ��������ӿؼ�</p>
+              <p>隐藏掉控件显示区域外的子控件</p>
               <p>&nbsp;</p>
         </div>
             
-          <h4>�ļ�</h4>
+          <h4>文件</h4>
             <div class="desc">
               <p>&nbsp;</p>
-              <p>����һ��Ĭ���µ�ͼƬ��png,jpg�����ؼ�Ĭ��״̬����ʾ��</p>
+              <p>配置一张默认下的图片（png,jpg），控件默认状态下显示。</p>
               <p>&nbsp;</p>
       </div>
          
               
-              <h4>���������</h4>
+              <h4>滚动区域宽</h4>
             <div class="desc">
               <p>&nbsp;</p>
-              <p>������ק����Ŀ��ȡ�</p>
+              <p>设置拖拽区域的宽度。</p>
               <p>&nbsp;</p>
     </div>
         
-            <h4>���������</h4>
+            <h4>滚动区域高</h4>
             <div class="desc">
               <p>&nbsp;</p>
-              <p>������ק����ĸ߶ȡ�</p>
+              <p>设置拖拽区域的高度。</p>
               <p>&nbsp;</p>
    </div>
              <div class="warning">
                <p>&nbsp;</p>
-               <p>ע�⣺��������������ú���Ⱦ������һ����ɫ���߿���֮��Ӧ����Ҫ��ק���ӿؼ��������������ɫ�߿��ڲ��ܽ�����ק��</p>
+               <p>注意：滚动区域宽高设置后渲染区会有一个绿色的线框与之对应，需要拖拽的子控件都必须包涵在绿色线框内才能进行拖拽。</p>
                <p>&nbsp;</p>
          </div>
-          <h4>����ɫ͸����</h4>
+          <h4>背景色透明度</h4>
             <div class="desc">
               <p>&nbsp;</p>
-              <p>1. ���ñ�����ɫ��͸���ȣ���Χ0-255�� 0��ʾ��ȫ͸����255��ʾ��͸����</p>
+              <p>1. 设置背景颜色的透明度，范围0-255。 0表示完全透明，255表示不透明。</p>
               <p>&nbsp;</p>
             </div>
            
-           <h4>�����ɫ</h4>
+           <h4>填充颜色</h4>
             <div class="desc">
            
-                	<h5>����ɫ</h5>
+                	<h5>无颜色</h5>
                     <div class="desc">
                       <p>&nbsp;</p>
-                      <p>����ɫ״̬�£��ؼ�����ɫ�����</p>
+                      <p>无颜色状态下，控件背景色变成无</p>
                       <p>&nbsp;</p>
                     </div>
-                    <h5>��ɫ</h5> <div class="desc">
+                    <h5>单色</h5> <div class="desc">
                       <p>&nbsp;</p>
-                      <p>���ñ���ɫ����ɫ��RGB��</p>
+                      <p>设置背景色的颜色（RGB）</p>
                       <p>&nbsp;</p>
                     </div>
-                    <h5>����ɫ</h5> 
+                    <h5>渐变色</h5> 
                     <div>
                     <ol>
-                    	<li>��ʼɫ</li>
+                    	<li>开始色</li>
                          <div class="desc">
                            <p>&nbsp;</p>
-                           <p>���ý���ɫ�������ɫ</p>
+                           <p>设置渐变色的起点颜色</p>
                            <p>&nbsp;</p>
                          </div>
-                        <li>����ɫ</li>
+                        <li>结束色</li>
                           <div class="desc">
                             <p>&nbsp;</p>
-                            <p>���ý���ɫ�Ľ�����ɫ</p>
+                            <p>设置渐变色的结束颜色</p>
                             <p>&nbsp;</p>
                           </div>
                         <li>X</li>
                           <div class="desc">
                             <p>&nbsp;</p>
-                            <p>����x</p>
+                            <p>向量x</p>
                             <p>&nbsp;</p>
                           </div>
                         <li>Y</li>
                           <div class="desc">
                             <p>&nbsp;</p>
-                            <p>����Y</p>
+                            <p>向量Y</p>
                             <p>&nbsp;</p>
                           </div>
                           </ol>
@@ -132,36 +132,36 @@
          
     </div>
   
-  <h3>�߼�����</h3>
+  <h3>高级属性</h3>
     <div class="desc">
     	<div descimg><img src="img/3-3-15-img-03.png" /></div>
 
-        	<h4>���Գ���ʱ��</h4>
+        	<h4>惯性持续时间</h4>
             <div class="desc">
               <p>&nbsp;</p>
-              <p>���Գ���ʱ����ָ��ֹͣ����ק�����ק����ʱ����ק����ݹ��Լ����ƶ���������ʱ�䡣</p>
+              <p>惯性持续时间是指当停止对拖拽层的拖拽操作时，拖拽层根据惯性继续移动所持续的时间。</p>
               <p>&nbsp;</p>
         </div>
-        <h4>���Ի���Ƶ��</h4>
+        <h4>惯性缓动频率</h4>
             <div class="desc">
               <p>&nbsp;</p>
-              <p>���Ի���Ƶ��ָָ��ֹͣ����ק�����ק����ʱ����ק����ݹ��Լ����ƶ�ʱ���ٶȱ仯Ƶ�ʣ�Ĭ��ֵΪ2������ֵ����1ʱ����ק�������ƶ���Խ��Խ���ģ�ֵԽ�󣬼���Ч��Խ���ԣ�����ֵС��1ʱ����ק�������ƶ���Խ��Խ��ģ�ֵԽ�󣬼���Ч��Խ���ԡ�</p>
+              <p>惯性缓动频率指指当停止对拖拽层的拖拽操作时，拖拽层根据惯性继续移动时的速度变化频率，默认值为2。当该值大于1时，拖拽层后惯性移动是越来越慢的，值越大，减速效果越明显；当该值小于1时，拖拽层后惯性移动是越来越快的，值越大，加速效果越明显。</p>
               <p>&nbsp;</p>
         </div>
-        <h4>�����ص�</h4>
+        <h4>开启回弹</h4>
             <div class="desc">
               <p>&nbsp;</p>
-              <p>������ק���Ƿ����ص�Ч��������������ק������ݽ��ܹ����϶���������ק��߽硣</p>
-           	  <h5>����ʱ��</h5>
+              <p>设置拖拽层是否开启回弹效果。若开启，拖拽层的内容将能够被拖动至脱离拖拽层边界。</p>
+           	  <h5>持续时间</h5>
               <div class="desc">
                 <p>&nbsp;</p>
-                      <p>����ʱ����ָ��ֹͣ����ק�����ק����ʱ����ק����������߽�ʱ����ק�������ƶ�����ק��߽磨����ק�����෴����������ʱ�䡣</p>
+                      <p>持续时间是指当停止对拖拽层的拖拽操作时且拖拽层内容脱离边界时，拖拽层内容移动至拖拽层边界（与拖拽方向相反）所持续的时间。</p>
                   <p>&nbsp;</p>
                     </div>
-                    	<h5>����Ƶ��</h5>
+                    	<h5>缓动频率</h5>
                     <div class="desc">
                       <p>&nbsp;</p>
-                      <p>����Ƶ����ָ��ֹͣ����ק�����ק����ʱ����ק����������߽�ʱ����ק����������ק��߽磨����ק�����෴���˶��ı仯Ƶ�ʣ�Ĭ��ֵΪ2.0������ֵ����1ʱ����ק�������ƶ���Խ��Խ���ģ�ֵԽ�󣬼���Ч��Խ���ԣ�����ֵС��1ʱ����ק�������ƶ���Խ��Խ��ģ�ֵԽ�󣬼���Ч��Խ���ԡ�</p>
+                      <p>缓动频率是指当停止对拖拽层的拖拽操作时且拖拽层内容脱离边界时，拖拽层内容向拖拽层边界（与拖拽方向相反）运动的变化频率，默认值为2.0。当该值大于1时，拖拽层后惯性移动是越来越慢的，值越大，减速效果越明显；当该值小于1时，拖拽层后惯性移动是越来越快的，值越大，加速效果越明显。</p>
                       <p>&nbsp;</p>
               </div>
               <p>&nbsp;</p>
@@ -171,7 +171,7 @@
   
   
 </div> 
-   <div class="bottom">&nbsp;Copyright &copy;&nbsp;2013 <a href="http://www.cocostudio.org" >CocoStudio.org</a>.&nbsp;All Rights Reserved.&nbsp;�汾v1.0.0 </div>
+   <div class="bottom">&nbsp;Copyright &copy;&nbsp;2013 <a href="http://www.cocostudio.org" >CocoStudio.org</a>.&nbsp;All Rights Reserved.&nbsp;版本v1.0.0 </div>
 </div>
 </body>
 </html>
