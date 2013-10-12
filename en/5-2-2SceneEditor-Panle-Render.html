@@ -9,35 +9,35 @@
 </head>
 <body id="split">
 <div id="content">
-  <div rel="aboutXMLDoc"><h1 style="font-size: 36px; text-align:center; color:#999; margin:20px 0px 15px 0px; " >English version is coming soon...</h1>
-    <h2>渲染面板</h2>
-    <h3>简介</h3>
+  <div rel="aboutXMLDoc">
+    <h2>Render Panle</h2>
+    <h3>Introduction</h3>
     <div class="desc">
 		
 		<p><img src="img/5-2-2-img-01.png" alt="" /></p>
 		<p>&nbsp;</p>
-		<p>渲染窗口提供一个绘制控件的面板，提供实时的效果预览。</p>
+		<p>Render window provides a rendering control panel that provides real-time effect preview. </p>
 		<p>&nbsp;</p>
     </div>
-     <h3>功能</h3>
+     <h3>Feature</h3>
     <div class="desc">
     	
-        	<h4>框选</h4>
+        	<h4>Marquee</h4>
             <div>
              <img src="img/5-2-2-img-02.png" alt="" />
                             <p>&nbsp;</p>
-              <p>用鼠标框选控件，对控件进行整体的复制，删除等操作和设置。</p>
+              <p>Marquee with mouse to copy, delete and setting. </p>
               <p><br />
               </p>
       </div>
-           <h4>调整视图</h4>
+           <h4>Adjusting the view</h4>
             <div>
               <img src="img/5-2-2-img-03.png" alt="" />
               <p>&nbsp;</p>
-<p>说明：</p>
-<p> 1.   1，2，4，5处可以通过鼠标调整组件的大小，对控件进行伸缩操作（按住Shift时为等比缩放）；</p>
-<p> 2.   3处可以对控件进行旋转操作；</p>
-<p> 注意：只有挂载了精灵组件、ui组件、地图组件的Node才有以上功能。</p>
+<p>Directions: </p>
+<p> 1.   1,2,4,5 department can use the mouse resize the component and retractable controls(Press and hold Shift to Geometric scaling);</p>
+<p> 2.   3 department can rotate the control;</p>
+<p> Note that: You can use above feature if you mount the Node of Sprite component, UI component or Map component.</p>
 <p>&nbsp;</p>
             </div>
    	</div>
@@ -45,134 +45,135 @@
  
     
   
-    <h3>右键菜单</h3>
+    <h3>Right Click Menu</h3>
     <div class="desc">
 	<div class="longdesc">
-        	<h4>添加对象</h4>
+        	<h4>Add Object</h4>
            
           	<div class="RightMenu">
           	 <img src="img/5-2-2-img-04.png" alt="" />
-          	  <p>在画布中添加一个对象。</p>
+          	  <p>Adding an object to the canvas.</p>
           	  <p>&nbsp;</p>
         </div>
               <div class="warning">
-                <p>选中已经存在的场景对象右键添加对象时是添加到当前选中的对象上作为它的子集,若没有选中任何控件则添加在根对象上作为子集。。        </p>
+                <p>When you selected a scene and right click add it to another object as subset, please note that:
+                  if you selected nothing as target object, the scene will be added to root object as subset. </p>
         </div>
               
           
           
-         <h4>删除对象</h4>
+         <h4>Delete Object</h4>
           <div >
            <img src="img/5-2-2-img-05.png" alt="" />
-            <p>删除选中对象</p>
+            <p>Delete the selected object</p>
           </div>
            <div class="warning">
-                 <p>1.若没选中对象或者仅选中一个对象，该菜单项被屏蔽</p>
-<p> 2.如果选中对象包含子集，会把连同子集一起删除。 </p>
+                 <p>1.If no object or only one object is selected, this menu item is masked.</p>
+<p> 2.If you delete a object which contains a subset, the subset will be deleted.</p>
                  <p>&nbsp;</p>
         </div>
       
         
     
         
-      <h4>添加组件</h4>
+      <h4>Add Components</h4>
       <div>
        <img src="img/5-2-2-img-06.png" alt="" />
         <p>&nbsp;</p>
         <table cellspacing="0" cellpadding="0" border="1">
           
           <tr>
-            <td width="75">骨骼组件</td>
-            <td width="346">骨骼动画组件包含了渲染骨骼动画的功能，挂载骨骼动画组件之后，空对象变成了一个动画对象。（骨骼动画是由Cocostudio动画编辑器制作导出）</td>
+            <td width="75">Armature Component</td>
+            <td width="346">Armature animation component is a rendering component which is used to rendering Armature animations. If you mount Armature animation component, empty object can be converted into an animation object.  </td>
           </tr>
           <tr>
-            <td>地图组件</td>
-            <td>地图组件包含了渲染tmx格式地图文件的功能，挂载地图组件之后，空对象变成了地图对象。</td>
+            <td>Map Component</td>
+            <td>Map component is a rendering component which is used to rendering tmx format map file. If you mount the map component, empty object can be converted into a map object.</td>
           </tr>
           <tr>
-            <td>UI</td>
-            <td>ui组件包含了渲染ui控件的功能，挂载ui组件后，空对象变成一个ui对象。</td>
+            <td>UI Component</td>
+            <td>UI component is a rendering component which is used to rendering UI controls. If you mount the UI component, empty object can be converted into a UI object.</td>
           </tr>
           <tr>
-            <td>粒子组件</td>
-            <td>粒子组件包含了渲染pliat格式粒子文件的功能，挂载粒子组件之后，空对象变成了粒子对象。</td>
+            <td>Particle Component</td>
+            <td>Particle component is a rendering component which is used to rendering pliat format Particle file. If you mount the Particle component, empty object can be converted into a Particle object.</td>
           </tr>
           <tr>
-            <td>自定义属性</td>
-            <td>自定义属性组件包含了加载数据json文件的功能，挂载自定义属性组件后，空对象变成了一个有逻辑属性的对象。</td>
+            <td>Custom Property</td>
+            <td>Custom Property Component is used to load data from json file.</td>
           </tr>
           <tr>
-            <td>声音</td>
-            <td>音效组件包含了播放mp3和wav格式音效的功能，挂载音效组件后，空对象变成了一个音效对象。</td>
+            <td>Audio</td>
+            <td>Audio Component is used to play mp3 and wav fomat audio file.</td>
           </tr>
           <tr>
-            <td>精灵</td>
-            <td>精灵组件包含了渲染png图片的功能，挂接精灵组件之后，空对象变成了一个png对象。</td>
+            <td>Sprite</td>
+            <td>Sprite component is a rendering component which is used to rendering png format image file.</td>
           </tr>
         </table>
         <p>&nbsp;</p>
       </div>
          <div class="warning">
-           <p>1.注意一个空对象只能挂接一个渲染组件，渲染组件包括骨骼组件、地图组件、ui组件、粒子组件、精灵组件，这些组件只要有一个被挂载到对象，其他的会自动灰掉。</p>
-           <p> 2.一个空对象只能添加一个音效组件和一个自定义组件。</p>
+           <p>1.An empty object can only mount one rendering component.</p>
+           <p> 2.An empty object can only add an audio component and a Custom Property Component.</p>
 </div>
         
            
-      <h4>删除组件</h4>
+      <h4>Delete Component</h4>
       <div>
         <img src="img/5-2-2-img-07.png" alt="" />
         <table cellspacing="0" cellpadding="0" border="1">
          
           <tr>
-            <td width="86">骨骼组件</td>
-            <td width="238">去掉骨骼动画功能</td>
+            <td width="86">Armature Component</td>
+            <td width="238">Remove Armature Component</td>
           </tr>
           <tr>
-            <td>地图组件</td>
-            <td>去掉地图组件功能</td>
+            <td>Map Component</td>
+            <td>Remove Map Component</td>
           </tr>
           <tr>
-            <td>UI</td>
-            <td>去掉UI功能</td>
+            <td>UI Component</td>
+            <td>Remove UI Component</td>
           </tr>
           <tr>
-            <td>粒子组件</td>
-            <td>去掉粒子组件</td>
+            <td>Particle Component</td>
+            <td>Remove Particle Component</td>
           </tr>
           <tr>
-            <td>自定义属性</td>
-            <td>去掉自定义属性组件</td>
+            <td>Custom Property</td>
+            <td>Remove Custom Property Component</td>
           </tr>
           <tr>
-            <td>声音</td>
-            <td>去掉声音组件</td>
+            <td>Audio Component</td>
+            <td>Remove Audio Component</td>
           </tr>
           <tr>
-            <td>精灵</td>
-            <td>去掉精灵组件</td>
+            <td>Sprite Component</td>
+            <td>Remove Sprite Component</td>
           </tr>
         </table>
         <p>&nbsp;</p>
       </div>
          <div class="warning">
-           <p>选中节点不包含的组件，则该组件对应的菜单项被屏蔽 。</p>
+           <p>If selected node does not contain a component, the component corresponding menu item will be shielded.</p>
 </div>
         
         
               
-      <h4>复制</h4>
+      <h4>Copy</h4>
       <div><img src="img/5-2-2-img-08.png" alt="" /> </div>
          <div class="warning">
-           <p>1.若没选中对象，该菜单项被屏蔽</p>
-           <p> 2.支持多选复制，快捷键Ctrl+C。</p>
+           <p>1. If no object is selected, the menu item will be masked</p>
+           <p> 2. Multi-selection Copy Support(Ctrl+C).</p>
 </div>
                   
-      <h4>粘贴</h4>
+      <h4>Paste</h4>
       <div><img src="img/5-2-2-img-09.png" alt="" /> </div>
          <div class="warning">
-           <p>1.若没被拷贝的对象，该菜单项被屏蔽。</p>
-           <p> 2.鼠标右键粘贴时粘贴位置根据鼠标位置变化而变化。</p>
-           <p> 3.快捷键Ctrl+V粘贴时，位置为当前复制对象的位置。</p>
+           <p>1.If the object is not copied, this menu item is masked.</p>
+           <p> 2.Pasting position varies according to the mouse position.</p>
+           <p> 3.When using Shortcut Ctrl + V paste, the current position is the  pasted object replication. </p>
 </div>
         
       </div>
