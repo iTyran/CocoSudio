@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml11.dtd">
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -9,13 +9,13 @@
 </head>
 <body id="split">
 <div id="content">
-  <div rel="aboutXMLDoc"><h1 style="font-size: 36px; text-align:center; color:#999; margin:20px 0px 15px 0px; " >English version is coming soon...</h1>
-    <h2>Render Panel</h2>
+  <div rel="aboutXMLDoc">
+    <h2>Rendering Panel</h2>
     <h3>Overview</h3>
     <div class="desc">
 		
 		<p>&nbsp;</p>
-		<p>Render Panel provides a rendering control to support real-time preview.</p>
+		<p>The Rendering panel provides a rendering widget to support real-time previewing functionality.</p>
 		<p>&nbsp;</p>
     </div>
      <h3>Functionality</h3>
@@ -24,8 +24,8 @@
         	<h4>Select</h4>
             <div><img src="img/3-2-2-img-01.png" alt="" />
               <p>&nbsp;</p>
-              <p>You can use your mouse to select the whole control and do copy, delete operation on it.</p>
-              <p><br />
+              <p>Use your mouse to select the entire widget, then copy or delete the widget.</p>
+              <p><br/>
               </p>
  </div>
            <h4>Adjust View</h4>
@@ -33,10 +33,9 @@
 <p>&nbsp;</p>
 <p>Details:</p>
                       <ul>
-                        <li>At the 1,2,4,5 point, you can use your mouse to adjust control's size .
-                        You can also scale the control(With the Shift key be pressed , you can achieve a Uniform-Scale)</li>
-                        <li>At the 3 point, you can rotate the control.</li>
-                        <li>Point 6 is a anchor point.</li>
+                        <li>At the corners or the 1,2,4, or 5 points of reference as labelled above, you can use your mouse to adjust the size of the widget. You can also scale the widget by simultaneously pressing the Shift key and clicking on the widget to modify the widget to be uniform to scale.</li>
+                        <li>By selecting the point of reference as shown in the graphic as point 3, you can rotate the widget.</li>
+                        <li>Note that point 6 is an anchor point.</li>
                       </ul>
                   <p>&nbsp;</p>
      		</div>
@@ -58,59 +57,59 @@
           	    <tr>
           	    
           	      <td width="67">Button</td>
-          	      <td width="244">Add a button to a control as a sub-control.</td>
+          	      <td width="244">Adds a button to a widget as a sub widget.</td>
        	        </tr>
           	    <tr>
           	      <td>CheckBox</td>
-          	      <td>Add a CheckBox to a control as a sub-control.</td>
+          	      <td>Adds a checkbox to a widget as a sub widget.</td>
        	        </tr>
           	    <tr>
           	      <td>Image</td>
-          	      <td>Add a Image to a control as a sub-control.</td>
+          	      <td>Adds an image to a widget as a sub widget.</td>
        	        </tr>
           	    <tr>
           	      <td>Label</td>
-          	      <td>Add a text field to a control as a sub-control.</td>
+          	      <td>Adds a text field to a widget as a sub widget.</td>
        	        </tr>
           	    <tr>
           	      <td>AtlasLabel</td>
-          	      <td>Add a numeric label to a control as a sub-control.</td>
+          	      <td>Adds a numeric label to a widget as a sub widget.</td>
        	        </tr>
           	    <tr>
           	      <td>BMFontLabel</td>
-          	      <td>Add a user-defined font to a control as a sub-control.</td>
+          	      <td>Adds a user-defined font to a widget as a sub widget.</td>
        	        </tr>
           	    <tr>
           	      <td>LoadingBar</td>
-          	      <td>Add a loading bar to a control as a sub-control.</td>
+          	      <td>Adds a loading bar to a widget as a sub widget.</td>
        	        </tr>
           	    <tr>
           	      <td>Panel</td>
-          	      <td>Add a layer lick container to a control as a sub-control.</td>
+          	      <td>Adds a layer lock container to a widget as a sub widget.</td>
        	        </tr>
           	    <tr>
           	      <td>ScrollView</td>
-          	      <td>Add a scroll view to a control as a sub-control.</td>
+          	      <td>Adds a scroll view to a widget as a sub widget.</td>
        	        </tr>
           	    <tr>
           	      <td>Slider</td>
-          	      <td>Add a slider to a control as a sub-control.</td>
+          	      <td>Adds a slider to a widget as a sub widget.</td>
        	        </tr>
           	    <tr>
           	      <td>TextArea</td>
-          	      <td>Add a text area to a control as a sub-control.</td>
+          	      <td>Adds a text area to a widget as a sub widget.</td>
        	        </tr>
           	    <tr>
           	      <td>TextButton</td>
-          	      <td>Add a text button to a control as a sub-control.</td>
+          	      <td>Adds a text button to a widget as a sub widget.</td>
        	        </tr>
           	    <tr>
           	      <td>TextField</td>
-          	      <td>Add a text field to a control as a sub-control.</td>
+          	      <td>Adds a text field to a widget as a sub widget.</td>
        	        </tr>
           	    <tr>
           	      <td>DragPanel</td>
-          	      <td>Add a dragable panel to a control as a sub-control.</td>
+          	      <td>Adds a dragable panel to a widget as a sub widget.</td>
        	        </tr>
           	    <tr>
           	      <td></td>
@@ -120,15 +119,15 @@
           	  <p>&nbsp;</p>
             </div>
           <div class="warning">
-            <p>When you select a control and add a control through context menu, 
-            it will add a control to your current selected control.
-            If you don't select a control before you fire a context menu to add a 
-            control, it will be added as a root control's sub-control.</p>
+            <p>When you select a widget and add a widget through the context menu, 
+            CocoStudio will add a widget to your currently selected widget.
+            If you don't select a widget before you fire a context menu to add a 
+            widget, CocoStudio will add the widget as a root widget's sub widget.</p>
 </div>
           
           
           
-           <h4>Layout align</h4>
+           <h4>Layout Alignment</h4>
            <div class="RightMenu"><img src="img/3-2-2-img-04.png" alt="" />
              <table border="1" cellspacing="0" cellpadding="0" >
               
@@ -137,35 +136,35 @@
                <tr>
                
                  <td width="71">Center Alignment</td>
-                 <td width="196">Make the selected controls center align.</td>
+                 <td width="196">Center aligns the selected widgets.</td>
                </tr>
                <tr>
                  <td>Left Alignment</td>
-                 <td>Make the selected controls left align.</td>
+                 <td>Left aligns the selected widgets.</td>
                </tr>
                <tr>
                  <td>Right Alignment</td>
-                 <td>Make the selected controls right align.</td>
+                 <td>Right aligns the selected widgets.</td>
                </tr>
                <tr>
                  <td>Top Alignment</td>
-                 <td>Make the selected controls top align.</td>
+                 <td>Top aligns the selected widgets.</td>
                </tr>
                <tr>
                  <td>Bottom Alignment</td>
-                 <td>Make the selected controls bottom align.</td>
+                 <td>Bottom aligns the selected widgets.</td>
                </tr>
                <tr>
                  <td>Horizontal Alignment</td>
-                 <td>Make the selected controls horizontal align.</td>
+                 <td>Horizontally aligns the selected widgets.</td>
                </tr>
                <tr>
                  <td>Vertical Alignment</td>
-                 <td>Make the selected controls vertical align.</td>
+                 <td>Vertically aligns the selected widgets.</td>
                </tr>
                <tr>
-                 <td>Origin Alignment</td>
-                 <td>Make the selected controls origin align.</td>
+                 <td>Original Alignment</td>
+                 <td>Revert the selected widgets back to the original alignment.</td>
                </tr>
                <tr>
           	      <td></td>
@@ -181,25 +180,25 @@
          <img src="img/3-2-2-img-05.png" alt="" />
          
           <p>&nbsp;</p>
-          <p>Delete the selected controls.</p>
+          <p>Deletes the selected widgets.</p>
           <p>&nbsp;</p>
       </div>
         <div class="warning">
             <ol>
-                <li>If no control is selected, then the menu item will be disabled.</li>
-                <li>Support multiple selection.</li>
+                <li>If no widget is selected, then the menu item will be disabled.</li>
+                <li>Supports multiple selection.</li>
             </ol>
       	</div>
         
       <h4>Copy</h4>
       <div>
        <img src="img/3-2-2-img-06.png" alt="" />     
-        <p>Make a copy of the selected controls.</p>
+        <p>Makes a copy of the selected widgets.</p>
         <p>&nbsp;</p>
       </div>
          <div class="warning">
            <p>&nbsp;</p>
-           <p>If no control is selected, then the menu item will be disabled.</p>
+           <p>If no widget is selected, then the menu item will be disabled.</p>
            <p>&nbsp;</p>
         </div>
         
@@ -207,12 +206,12 @@
       <h4>Paste</h4>
       <div>
        <img src="img/3-2-2-img-07.png" alt="" />
-        <p>Paste the pre-copied controls.</p>
+        <p>Pastes the pre-copied widgets.</p>
         <p>&nbsp;</p>
    </div>
          <div class="warning">
            <p>&nbsp;</p>
-           <p>If there are no controls are copied before, then the 
+           <p>If no widgets were copied before, then the 
            menu item will also be disabled.</p>
            <p>&nbsp;</p>
         </div>
@@ -223,13 +222,12 @@
       <div>
        <img src="img/3-2-2-img-08.png" alt="" />
         
-        <p>Edit animation of the selected control.</p>
+        <p>Edits animation of the selected widget.</p>
         <p>&nbsp;</p>
    </div>
          <div class="warning">
            <p>&nbsp;</p>
-           <p>You can't edit animation of control until you
-           switch to the animation model.</p>
+           <p>You must switch to the animation model first in order to edit the animation of the widget.</p>
            <p>&nbsp;</p>
         </div>
         
