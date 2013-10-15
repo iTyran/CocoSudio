@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>UI控件通用属性</title>
+<title>General property</title>
 <meta name="Keywords" content="CocoStudio,Cocos2d-x,cocos2d-iphone,2D游戏引擎,游戏开发工具" />
 <meta name="Description" content="CocoStudio帮助手册,CocoStudio中文手册,游戏编辑器使用帮助,CocoStudio用户指南"/>
 <link type="text/css" rel="stylesheet" href="style/style.css"  />
@@ -10,138 +10,138 @@
 <body id="split">
 <div id="content">
   <div rel="aboutXMLDoc">
-    <h2>UI控件通用属性</h2>
-     <h3  id="properties">尺寸和模式</h3>
+    <h2>General property</h2>
+     <h3  id="properties">Size and mode</h3>
     <div class="desc">
-    	<h4>控件宽</h4>
+    	<h4>Control width</h4>
         <div>
           <p>&nbsp;</p>
-          <p>设置控件的宽度，单位为像素。</p>
+          <p>Set width of the widget in pixels.</p>
           <p>&nbsp;</p>
         </div>
-      <h4>控件高</h4>
+      <h4>Control height</h4>
         <div>
           <p>&nbsp;</p>
-          <p>设置控件的高度，单位为像素。</p>
+          <p>Set height of the widget in pixels.</p>
           <p>&nbsp;</p>
         </div>
-        <h4>模式</h4>
+        <h4>Mode</h4>
         <div>
         <h5>Auto</h5>
         <div class="desc">
           <p>&nbsp;</p>
-          <p>自动模式</p>
+          <p>Auto mode</p>
           <p>&nbsp;</p>
         </div>
          <h5>Custom</h5>
         <div class="desc">
           <p>&nbsp;</p>
-          <p>自定义模式</p>
+          <p>Custom mode</p>
           <p>&nbsp;</p>
         </div>
-        	<h5 id="ninebox">九宫格</h5>
+        	<h5 id="ninebox">3x3 grids</h5>
         	 <div class="desc">
-		<p>九宫格是利用一张很小的图片来绘制大区域图片却不失真的技术。</p>
-		<p>绘制时会遵循下面的规则：</p>
+		<p>3x3 grids use a small picture to draw the large areas picture without distortion techniques.</p>
+		<p>When drawing it will follow the rules below:</p>
 		<div class="longdesc">
 			<p>&nbsp;</p>
-			<p>a. 保持4个角部分不变形</p>
-          <p>b. 单向拉伸4条边（即在4个角两两之间的边，比如上边，只做横向拉伸）</p>
-            <p>c. 双向拉伸中间部分（即九宫格的中间部分，横向，纵向同时拉伸，PS：拉伸比例不一定相同）</p>
+			<p>a. keep the shape of the part of four edges</p>
+			<p>b. streching the edges in one side (i.e. the edges between any two corners, such as top, only transverse tensile)</p>
+            <p>c.  (i.e. the 3x3 grids middle part, horizontal, vertical, simultaneously stretched, PS: stretching the proportions are not necessarily the same)</p>
             <p>&nbsp;</p>
 		</div>
-        <p>CocoStudio共四个参数：</p>
+        <p>Four parameters of CocoStudio</p>
         <div class="longdesc">
 			<p>&nbsp;</p>
-			<p>"CapInsetsX"、"CapInsetsY"&nbsp;是一对参数，它可以确定我们中心区域的左下角的坐标（Cocos2d-x是左下角为原点）；</p>
-            <p> "CapInsetsWidth"、"CapInsetsHeight"则确定中心区域的大小；</p>
+			<p>"CapInsetsX"、"CapInsetsY"&nbsp; is a pair of parameters, it can determine our center coordinates of the lower left corner (Cocos2d-x is the lower left corner as the origin);</p>
+            <p> "CapInsetsWidth"、"CapInsetsHeight" is determining the size of center；</p>
             <p>&nbsp;</p>
 </div>
       <div class="warning">
         <p>&nbsp;</p>
-        <p>注意 ：</p>
-        <p>控件宽要大于2*X、控件高要大于2*Y，否则容易出现贴图错位现象。</p>
-        <p>设置九宫格属性后应将缩放属性值都设置为1，否则图片仍然会出现失真。</p>
+        <p>Note ：</p>
+        <p>Widget width greater then 2*X, widget height greater than 2*Y, or prone to map the wrong.</p>
+        <p>Set 3x3 grids attribute value should be scaling properties are set to 1, otherwise the picture will still appear distorted.</p>
         <p>&nbsp;</p>
       </div></div>
         </div>
     </div>
     
-    
- 
-    
-    
-    <h3  id="properties">UI常规属性</h3>
+    <h3  id="properties">Common properties</h3>
     <div class="desc">
         <div class="longdesc">
-        	<h4>交互</h4>
+        	<h4>Interactive</h4>
             <div>
             	<p>&nbsp; </p>
-            	<p>控制控件是否接受用户事件，如果该控件需要接受用户事件（如按钮），则需勾选。</p>
+            	<p>Control widget accepts user events or not, if the widget accept user event (such as a button), you need to check.</p>
             	<p>&nbsp; </p>
           </div>
-            <h4>显示/隐藏</h4>
+            <h4>Show/Hide</h4>
             <div>
             	<p>&nbsp; </p>
-            	<p>控制控件是否显示。用户可以把一些控件在开始状态下不显示，后期通过代码再显示出来。但是无论显示与否该控件都将被初始化加载到内存中。</p>
+            	<p>Controls whether the control is displayed. Users can set some widgets not display in start state, latter through the code and then displayed. But whether or not the control display will be initialized loaded into memory.</p>
             	<p>&nbsp;</p>
         </div>
-          <h4>名字</h4>
+
+      <h4>Name</h4>
             <div>
             	<p>&nbsp; </p>
-            	<p>设置控件的名称，程序中可以通过该名称获取该控件。</p>
+            	<p>Set the widget's name, so the widget can be obtained through the name values in the program.</p>
             	<p>&nbsp;</p>
       </div>
-      		   <h4>Tag</h4>
-            <div>
+
+        
+            <h4>Tag</h4>
+
+<div>
             	<p>&nbsp;</p>
-            	<p>设置控件的Tag，程序中可以通过该Tag值获取该控件。</p>
+            	<p>Set the widget's tag, so the widget can be obtained through the tag values in the program.</p>
             	<p>&nbsp;</p>
           </div>
-          	<h4>旋转</h4>
+
+          <h4>Rotation</h4>
+
+<div>
+            	<p>&nbsp; </p>
+            	<p>Set the widget's rotation property, property values for the widget center to anchor clockwise rotation.</p>
+            	<p>&nbsp;</p>
+          </div>
+
+          <h4>Scale</h4>
+<div>
+            	<p>&nbsp;</p>
+            	<p>Set the widget's scaling, divied into X axis scaling and Y axis scaling. Values can be positive or negative, when the negative effect can be achieved when the flip.</p>
+            	<p>&nbsp;</p>
+          </div>
+            <h4>Position</h4>
+            <div>
+            	<p>&nbsp;</p>
+            	<p>设置控件的位置，X、Y值为锚点坐标相对原点（左下角）坐标的差值。</p>
+            	<p>&nbsp;</p>
+          </div>
+            <h4>Anchor point</h4>
             <div>
             	<p>&nbsp; </p>
-            	<p>设置控件的选择属性，属性值为该控件以锚点为中心顺时针旋转的度数。</p>
-            	<p>&nbsp;</p>
-          </div>
-         
-         
-            
-            <h4>缩放</h4>
-            <div>
-            	<p>&nbsp;</p>
-            	<p>设置控件的缩放比例，分为X轴缩放和Y轴缩放。值可以为正，也可以为负值，当为负值时可以实现翻转效果</p>
-            	<p>&nbsp;</p>
-          </div>
-            <h4>位置</h4>
-            <div>
-            	<p>&nbsp;</p>
-            	<p>设置控件的锚点位置，X、Y值为锚点坐标相对原点（左下角）坐标的差值。</p>
-            	<p>&nbsp;</p>
-          </div>
-            <h4>锚点</h4>
-            <div>
-            	<p>&nbsp; </p>
-            	<p>设置锚点位置，除层容器、滚动层、拖拽层的锚点默认在原点（左下角）外其余控件的锚点默认值为中心点。</p>
+           	  <p>设置锚点位置，除层容器、滚动层、拖拽层的锚点默认在原点（左下角）外其余控件的锚点默认值为中心点。</p>
                 <p></p>
 <p>&nbsp;</p>
           </div>
-            <h4>渲染层级</h4>
+            <h4>Render layer</h4>
             <div>
             	<p>&nbsp;</p>
-            	<p>设置控件渲染的先后顺序。值越小越先渲染，但是可能会被后渲染的覆盖。</p>
+            	<p>Set the widget's rendering order. Smaller values are first rendering, but may be rendered after coverage.</p>
             	<p>&nbsp;</p>
           </div>
-            <h4>透明度</h4>
+            <h4>Transparency</h4>
             <div>
             	<p>&nbsp;</p>
-            	<p>设置控件的透明度。取值范围为0到255。0 为纯透明，255为不透明。</p>
+            	<p>Set the widget's transparency. Ranges from 0 to 255. 0 for the pure transparent, 255 is opaque.</p>
             	<p>&nbsp;</p>
           </div>
-            <h4>颜色混合</h4>
+            <h4>Color blend</h4>
             <div>
             	<p>&nbsp;</p>
-            	<p>此属性设置控件的混合颜色。点击下拉菜单后会出现颜色选择框，选择颜色后会将原控件与该颜色进行混合渲染。</p>
+            	<p>Set the widget's blend color. Click the drop-down menu will appear after color selection box, select color after mixing the original widget and the color rendering.</p>
             	<p>&nbsp;</p>
           </div>
        	</div>
