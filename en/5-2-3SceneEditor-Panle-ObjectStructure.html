@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Object Structure Panle</title>
+<title>Object Structure Panel</title>
 <meta name="Keywords" content="CocoStudio,Cocos2d-x,cocos2d-iphone,2D游戏引擎,游戏开发工具" />
 <meta name="Description" content="CocoStudio帮助手册,CocoStudio中文手册,游戏编辑器使用帮助,CocoStudio用户指南"/>
 <link type="text/css" rel="stylesheet" href="style/style.css"  />
@@ -10,15 +10,15 @@
 <body id="split">
 <div id="content">
   <div rel="aboutXMLDoc">
-    <h2>Object Structure Panle</h2>
+    <h2>Object Structure Panel</h2>
     
     <h3>Introduction</h3>
     <div class="desc">
 		
 		<p><img src="img/5-2-3-img-01.png" alt="" /></p>
 		<p>&nbsp;</p>
-		<p>1. The root of the structure tree is a Node that represents a game object。</p>
-		<p>2. The added object in structure tree has a Corresponding object in Render Area.</p>
+		<p>1. The root of the structure tree is a node that represents a game object.</p>
+		<p>2. The added object in the structure tree has a corresponding object in the rendering area.</p>
 		<p>&nbsp; </p>
     </div>
      <h3>Feature</h3>
@@ -27,28 +27,28 @@
         	<h4>Show/Hide</h4>
             <div>
               <p>&nbsp;</p>
-              <p>1. Click the 'eye' icon to set the widget Show or Hide.</p>
-              <p>2. This Show/Hide buttom used to set widget's Visible proporty and it is synchronized with proporty panle.</p>
-              <p><br />
+              <p>1. Select the Eye icon to set the widget to either Show or Hide.</p>
+              <p>2. The Show/Hide button is used to set the widget's visible property and is synchronized with the property panel.</p>
+              <p><br/>
               </p>
       </div>
            <h4>Lock/Unlock</h4>
             <div>
               <p>&nbsp;</p>
-              <p>1. Click the 'lock' icon to set the widget Lock/Unlock.</p>
-<p> 2. Control locked will shield all operations.</p>
+              <p>1. Select the Lock icon to set the widget to Lock/Unlock.</p>
+<p> 2. The locked control will shield all operations.</p>
 <p>&nbsp;</p>
                   
      		</div>
              <h4>Layers Adjustment</h4>
             <div><img src="img/5-2-3-img-02.png" alt="" />
               <p>&nbsp;</p>
-              <p>Adjust the level of the widget by Drag the mouse through the structure tree. </p>
+              <p>Adjusts the level of the widget by dragging the mouse through the structure tree. </p>
 <p>&nbsp;</p>
                   
      		</div>
    	</div>
-     <h3>Right Click Menu</h3>
+     <h3>Right-Click Menu</h3>
      <div class="desc">
        <div class="longdesc">
          <h4>Add Object</h4>
@@ -59,8 +59,7 @@
            <p>&nbsp;</p>
          </div>
          <div class="warning">
-           <p>When you selected a scene and right click add it to another object as subset, please note that:
-                  if you selected nothing as target object, the scene will be added to root object as subset.</p>
+           <p>When you select a scene and right-click to add another object as a subset, please note that if you selected nothing as the target object, the scene will be added to the root object as a subset.</p>
            <p>&nbsp; </p>
          </div>
          <h4>Delete Object</h4>
@@ -69,8 +68,8 @@
            <p>Delete the selected object</p>
          </div>
          <div class="warning">
-           1.If no object or only one object is selected, this menu item is masked.</p>
-<p> 2.If you delete a object which contains a subset, the subset will be deleted.</p>
+           1. If no object or only one object is selected, this menu item is masked.</p>
+<p> 2. If you delete a object which contains a subset, the subset will be deleted.</p>
            <p>&nbsp;</p>
          </div>
          <h4>Add Components</h4>
@@ -80,38 +79,38 @@
           
              <tr>
             <td width="75">Armature Component</td>
-            <td width="346">Armature animation component is a rendering component which is used to rendering Armature animations. If you mount Armature animation component, empty object can be converted into an animation object.  </td>
+            <td width="346">The Armature animation component is the rendering component which is used to render Armature animations. If you mount the Armature animation component, an empty object can be converted into an animation object.  </td>
           </tr>
           <tr>
             <td>Map Component</td>
-            <td>Map component is a rendering component which is used to rendering tmx format map file. If you mount the map component, empty object can be converted into a map object.</td>
+            <td>The map component is a rendering component used to render the tmx format map file. If you mount the map component, an empty object can be converted into a map object.</td>
           </tr>
           <tr>
             <td>UI Component</td>
-            <td>UI component is a rendering component which is used to rendering UI controls. If you mount the UI component, empty object can be converted into a UI object.</td>
+            <td>The UI component is a rendering component which is used to renders UI controls. If you mount the UI component, an empty object can be converted into an UI object.</td>
           </tr>
           <tr>
             <td>Particle Component</td>
-            <td>Particle component is a rendering component which is used to rendering pliat format Particle file. If you mount the Particle component, empty object can be converted into a Particle object.</td>
+            <td>The Particle component is a rendering component which renders a pliat format Particle file. If you mount the Particle component, an empty object can be converted into a Particle object.</td>
           </tr>
           <tr>
             <td>Custom Property</td>
-            <td>Custom Property Component is used to load data from json file.</td>
+            <td>The Custom Property Component loads data from the json file.</td>
           </tr>
           <tr>
             <td>Audio</td>
-            <td>Audio Component is used to play mp3 and wav fomat audio file.</td>
+            <td>The Audio Component plays mp3 and wav fomat audio file.</td>
           </tr>
           <tr>
             <td>Sprite</td>
-            <td>Sprite component is a rendering component which is used to rendering png format image file.</td>
+            <td>The Sprite component is a rendering component which renders the png format image file.</td>
           </tr>
         </table>
            <p>&nbsp;</p>
          </div>
          <div class="warning">
-           <p>1.An empty object can only mount one rendering component.</p>
-           <p> 2.An empty object can only add an audio component and a Custom Property Component.</p>
+           <p>1. An empty object can only mount one rendering component.</p>
+           <p>2. An empty object can only add an audio component and a Custom Property Component.</p>
            <p>&nbsp;</p>
          </div>
          <h4>Delete Component</h4>
@@ -152,22 +151,22 @@
            <p>&nbsp;</p>
          </div>
          <div class="warning"> 
-           <p>If selected node does not contain a component, the component corresponding menu item will be shielded.</p>
+           <p>If the selected node does not contain a component, the component corresponding menu item will be shielded.</p>
            <p>&nbsp;</p>
          </div>
          <h4>Copy</h4>
       <div><img src="img/5-2-2-img-08.png" alt="" /> </div>
          <div class="warning">
            <p>1. If no object is selected, the menu item will be masked</p>
-           <p> 2. Multi-selection Copy Support(Ctrl+C).</p>
+           <p>2. Use the keyboard shortcut Ctrl + C to additionally select multiple files.</p>
 </div>
                   
       <h4>Paste</h4>
       <div><img src="img/5-2-2-img-09.png" alt="" /> </div>
          <div class="warning">
-           <p>1.If the object is not copied, this menu item is masked.</p>
-           <p> 2.Pasting position varies according to the mouse position.</p>
-           <p> 3.When using Shortcut Ctrl + V paste, the current position is the  pasted object replication. </p>
+           <p>1. If the object is not copied, this menu item is masked.</p>
+           <p>2. The pasting position varies according to the mouse position.</p>
+           <p>3. When using the keyboard shortcut Ctrl + V to paste, the current position is the pasted object replication. </p>
 </div>
        </div>
      </div>
