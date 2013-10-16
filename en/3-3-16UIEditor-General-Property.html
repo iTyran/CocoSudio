@@ -16,13 +16,13 @@
     	<h4>Control width</h4>
         <div>
           <p>&nbsp;</p>
-          <p>Set width of the widget in pixels.</p>
+          <p>Sets width of the widget in pixels.</p>
           <p>&nbsp;</p>
         </div>
       <h4>Control height</h4>
         <div>
           <p>&nbsp;</p>
-          <p>Set height of the widget in pixels.</p>
+          <p>Sets height of the widget in pixels.</p>
           <p>&nbsp;</p>
         </div>
         <h4>Mode</h4>
@@ -30,7 +30,7 @@
         <h5>Auto</h5>
         <div class="desc">
           <p>&nbsp;</p>
-          <p>Auto mode</p>
+          <p>Automatic mode</p>
           <p>&nbsp;</p>
         </div>
          <h5>Custom</h5>
@@ -41,27 +41,27 @@
         </div>
         	<h5 id="ninebox">3x3 grids</h5>
         	 <div class="desc">
-		<p>3x3 grids use a small picture to draw the large areas picture without distortion techniques.</p>
-		<p>When drawing it will follow the rules below:</p>
+		<p>3x3 grids use a small picture to draw the large area's picture without distortion techniques.</p>
+		<p>When drawing, follow the rules below:</p>
 		<div class="longdesc">
 			<p>&nbsp;</p>
-			<p>a. keep the shape of the part of four edges</p>
-			<p>b. streching the edges in one side (i.e. the edges between any two corners, such as top, only transverse tensile)</p>
-            <p>c.  (i.e. the 3x3 grids middle part, horizontal, vertical, simultaneously stretched, PS: stretching the proportions are not necessarily the same)</p>
+			<p>a. Keep the shape of the four edges.</p>
+			<p>b. Stretch graphics and keeps the corners at the same size.</p>
+            <p>c. You can simultaneously stretch the middle, horizontal, and vertical sections. The end result may not keep the original proportions.</p>
             <p>&nbsp;</p>
 		</div>
         <p>Four parameters of CocoStudio</p>
         <div class="longdesc">
 			<p>&nbsp;</p>
-			<p>"CapInsetsX"、"CapInsetsY"&nbsp; is a pair of parameters, it can determine our center coordinates of the lower left corner (Cocos2d-x is the lower left corner as the origin);</p>
-            <p> "CapInsetsWidth"、"CapInsetsHeight" is determining the size of center；</p>
+			<p>"CapInsetsX"、"CapInsetsY"&nbsp; uses a pair of parameters. They determine our center coordinates of the lower left corner. Cocos2d-x uses the lower left corner as the origin.</p>
+            <p> "CapInsetsWidth"、"CapInsetsHeight" is determining the size of the center.</p>
             <p>&nbsp;</p>
 </div>
       <div class="warning">
         <p>&nbsp;</p>
-        <p>Note ：</p>
-        <p>Widget width greater then 2*X, widget height greater than 2*Y, or prone to map the wrong.</p>
-        <p>Set 3x3 grids attribute value should be scaling properties are set to 1, otherwise the picture will still appear distorted.</p>
+        <p>Note：</p>
+        <p>The widget width should be greater than 2*X and widget height greater than 2*Y, or else the UI Editor will be prone to graphic artifacts.</p>
+        <p>Set 3 x 3 grids attribute value in scaling properties to 1; otherwise the graphic appears distorted.</p>
         <p>&nbsp;</p>
       </div></div>
         </div>
@@ -73,7 +73,7 @@
         	<h4>Interactive</h4>
             <div>
             	<p>&nbsp; </p>
-            	<p>Control widget accepts user events or not, if the widget accept user event (such as a button), you need to check.</p>
+            	<p>The control widget accepts user events. If the widget does not accept user events, such as a button, check.</p>
             	<p>&nbsp; </p>
           </div>
             <h4>Show/Hide</h4>
@@ -86,7 +86,7 @@
       <h4>Name</h4>
             <div>
             	<p>&nbsp; </p>
-            	<p>Set the widget's name, so the widget can be obtained through the name values in the program.</p>
+            	<p>Sets the widget's name, so the widget can be obtained through the named values in CocoStudio.</p>
             	<p>&nbsp;</p>
       </div>
 
@@ -95,7 +95,7 @@
 
 <div>
             	<p>&nbsp;</p>
-            	<p>Set the widget's tag, so the widget can be obtained through the tag values in the program.</p>
+            	<p>Sets the widget's tag, so the widget can be obtained through the tag values in CocoStudio.</p>
             	<p>&nbsp;</p>
           </div>
 
@@ -103,45 +103,45 @@
 
 <div>
             	<p>&nbsp; </p>
-            	<p>Set the widget's rotation property, property values for the widget center to anchor clockwise rotation.</p>
+            	<p>Sets the widget's rotation property value to rotate clockwise.</p>
             	<p>&nbsp;</p>
           </div>
 
           <h4>Scale</h4>
 <div>
             	<p>&nbsp;</p>
-            	<p>Set the widget's scaling, divied into X axis scaling and Y axis scaling. Values can be positive or negative, when the negative effect can be achieved when the flip.</p>
+            	<p>Sets the widget's scaling, divied into X axis scaling and Y axis scaling. Values can be positive or negative, when the negative effect can be achieved.</p>
             	<p>&nbsp;</p>
           </div>
             <h4>Position</h4>
             <div>
             	<p>&nbsp;</p>
-            	<p>设置控件的位置，X、Y值为锚点坐标相对原点（左下角）坐标的差值。</p>
+            	<p>Sets the position of the UI widget based upon the x and y coordinates. The position is based on the lower left corner of the parent node.</p>
             	<p>&nbsp;</p>
           </div>
             <h4>Anchor point</h4>
             <div>
             	<p>&nbsp; </p>
-           	  <p>设置锚点位置，除层容器、滚动层、拖拽层的锚点默认在原点（左下角）外其余控件的锚点默认值为中心点。</p>
+           	  <p>Sets the position of the anchor point. All UI widgets use the center point as the default anchor point except for the UIPanel, ScrollView, and DragPanel which use the lower left corner as the anchor point.</p>
                 <p></p>
 <p>&nbsp;</p>
           </div>
             <h4>Render layer</h4>
             <div>
             	<p>&nbsp;</p>
-            	<p>Set the widget's rendering order. Smaller values are first rendering, but may be rendered after coverage.</p>
+            	<p>Sets the widget's rendering order. Smaller values are first rendering, but may be rendered after coverage.</p>
             	<p>&nbsp;</p>
           </div>
             <h4>Transparency</h4>
             <div>
             	<p>&nbsp;</p>
-            	<p>Set the widget's transparency. Ranges from 0 to 255. 0 for the pure transparent, 255 is opaque.</p>
+            	<p>Sets the widget's transparency. Ranges from 0 to 255. 0 for the pure transparency, 255 for opaque.</p>
             	<p>&nbsp;</p>
           </div>
             <h4>Color blend</h4>
             <div>
             	<p>&nbsp;</p>
-            	<p>Set the widget's blend color. Click the drop-down menu will appear after color selection box, select color after mixing the original widget and the color rendering.</p>
+            	<p>Sets the widget's blend color. The drop-down menu will appear after the color selection box option is selected. Select the color option after mixing the original widget and color rendering.</p>
             	<p>&nbsp;</p>
           </div>
        	</div>
