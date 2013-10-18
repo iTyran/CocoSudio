@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Object Struct Panel</title>
+<title>Object Structure Panel</title>
 <meta name="Keywords" content="CocoStudio,Cocos2d-x,cocos2d-iphone,2D game engine, game development" />
 <meta name="Description" content="CocoStudio Help,CocoStudio Manual,CocoStudio Guide"/>
 <link type="text/css" rel="stylesheet" href="style/style.css"  />
@@ -10,14 +10,14 @@
 <body id="split">
 <div id="content">
     <div rel="aboutXMLDoc">
-        <h2>Object Struct Panel</h2>
+        <h2>Object Structure Panel</h2>
         <h3>Overview</h3>
         <div class="desc">
 
             <img src="img/3-2-3-img-01.png" alt="" />
             <p>&nbsp;</p>
-            <p>Object Struct Panel manages all widgets in the UI interface, including child-parent relationship management and hierarchy management.
-            The root object of the Object Struct Panel is a Panel.</p>
+            <p>The Object Structure Panel manages all widgets in the UI interface, including child-parent relationship management and hierarchy management.
+            The root object of the Object Structure Panel is a panel.</p>
             <p>&nbsp;</p>
             <p>&nbsp;</p>
         </div>
@@ -37,7 +37,7 @@
             <div>
                 <p>&nbsp;</p>
                 <p>1. Select the Circle icon to lock or unlock the widget.</p>
-                <p>2. When the widget is locked, all the operations will be disabled.</p>
+                <p>2. When the widget is locked, all associated operations will be disabled.</p>
                 <p>&nbsp;</p>
 
             </div>
@@ -46,8 +46,8 @@
                 <p>&nbsp;</p>
                 <p>1. You can adjust the hierarchy of widgets by selecting the widget with your left mouse button, then dragging and dropping the widgets. </p>
                 <p>2. After dragging the ImageView widget to the next panel, there will be a blue line between the two panels.
-                When you release your mouse, the ImageView will be positioned between the two panels. If you drop the ImageView on top of a panel,
-                then there will be a blue circle around the panel. When you release the mouse, the ImageView will be added as a subset of the panel.</p>
+                When you release your mouse, the ImageView widget will be positioned between the two panels. If you drop the ImageView widget on top of a panel,
+                then there will be a blue circle around the panel. When you release the mouse, the ImageView widget will be added as a subset of the panel.</p>
                 <p>&nbsp;</p>
             </div>
         </div>
@@ -172,7 +172,7 @@
                     </tr>
                     <tr>
                         <td>Origin Alignment</td>
-                        <td>Reverts the selected widgets to their original alignment.</td>
+                        <td>Reverts the selected widgets back to their original alignment.</td>
                     </tr>
                     <tr>
                         <td></td>
@@ -187,15 +187,15 @@
                 <ol>
                     <li>If no widget is selected or only one widget is selected, the menu item will be disabled.</li>
                     <li>Alignment will ignore all sub-widgets of the selected widget, because the sub-widget is changing according to its parent.</li>
-                    <li>Theory</li>
+                    <li>Logic</li>
                     <ol>
-                        <li>Compute the whole common rectangle of all widgets to prepare for aligning.</li>
-                        <li>Convert each widget's four points to world coordination.</li>
-                        <li>Calculate each widget's four edges: left side, right side, top side 
+                        <li>First, CocoStudio computes the whole common rectangle of all widgets to prepare for aligning.</li>
+                        <li>Converts each widget's four points to world coordination.</li>
+                        <li>Calculates each widget's four edges: left side, right side, top side 
                         and bottom side.</li>
-                        <li>Calculate the offset. For example, a widget's left side coordination - all widgets' common rectangle's 
+                        <li>Calculates the offset. For example, a widget's left side coordination - all widgets' common rectangle's 
                         left side = the offset</li>
-                        <li>Subtract the offset from widget's coordination to achieve alignment.</li>
+                        <li>Subtracts the offset from the widget's coordination to achieve alignment.</li>
 
                     </ol>
                 </ol>
@@ -206,7 +206,7 @@
         <div>
 
             <img src="img/3-2-2-img-05.png" alt="" /> <p>&nbsp;</p>
-            <p>Delete the selected object</p>
+            <p>Deletes the selected object</p>
             <p>&nbsp;</p>
 
         </div>
@@ -249,13 +249,13 @@
         <div>
             <img src="img/3-2-2-img-08.png" alt="" />  <p>&nbsp;</p>
 
-            <p>Edits animation of the selected widget.</p>
+            <p>Edits the animation of the selected widget.</p>
             <p>&nbsp;</p>
 
         </div>
         <div class="warning">
             <p>&nbsp;</p>
-            <p>Switch to the Animation Model from the menu bar before editing animation.</p>
+            <p>You should switch to the Animation Mode from the menu bar before editing animation.</p>
             <p>&nbsp;</p>
         </div>
 
