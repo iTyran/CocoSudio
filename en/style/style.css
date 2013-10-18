@@ -20,7 +20,7 @@ a:hover{color:white;background: rgb(79,129,189);}
 #sidebar{float:left;width:239px;border-right: 1px dashed #ccc;padding-left: 20px;}
 #docs #content{position:absolute;right:0px;}
 #content{padding-left: 20px;}
-#split #content{padding:0 10px;float:none;}
+#split #content{padding:0 0px;float:none;}
 
 ul,ol{margin-left: 15px;}
 hr{width: 95%;margin: 0 auto;border:1px solid #aaa;}
